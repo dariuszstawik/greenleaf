@@ -23,7 +23,7 @@ export default async function AboutSectionHome() {
           <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
         </svg>
       </div> */}
-      <div className="py-20">
+      <div className="py-10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl p-4 flex flex-wrap justify-center items-center">
             <div className="mb-6 w-full lg:w-1/3 text-center">
@@ -84,7 +84,7 @@ export default async function AboutSectionHome() {
           <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
         </svg>
       </div> */}
-      <Button>Poznaj nas</Button>
+      <Button>Sprawdź dowody</Button>
     </section>
   );
 }

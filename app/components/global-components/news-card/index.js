@@ -5,7 +5,7 @@ import Button from "../button";
 
 export default async function NewsCard({ title, lead, slug, img }) {
   return (
-    <div className="  max-w-screen h-[420px] sm:w-96 rounded-lg shadow-md">
+    <div className="flex flex-col max-w-screen h-[460px] sm:w-96 rounded-lg shadow-md bg-primaryGray">
       <Image
         className="w-contain rounded-t-lg"
         src={img ? `https:${img.fields.file.url}` : ""}
@@ -13,12 +13,12 @@ export default async function NewsCard({ title, lead, slug, img }) {
         height={img?.fields?.file?.details?.image?.height}
         alt={img?.fields?.description ? img.fields.description : ""}
       />
-      <div className="h-max p-4 flex flex-col justify-between">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm text-gray-500 mt-2">
+      <div className="p-4 flex flex-col flex-grow justify-between">
+        <h3 className="text-2xl font-semibold">{title}</h3>
+        <p className="mt-2">
           {lead.length > 200 ? lead.slice(0, 200) + "..." : lead}
         </p>
-        <Button className="ml-auto">
+        <Button className="ml-auto mt-auto">
           <Link href={`/aktualnosci/${slug}`}>czytaj więcej</Link>
         </Button>
       </div>

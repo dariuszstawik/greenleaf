@@ -1,7 +1,15 @@
+import Logo from "../logo";
+
 export default function Footer() {
   return (
-    <section>
-      <div className="skew skew-top mr-for-radius">
+    <section className="relative bg-primaryGray mt-32">
+      <img src="asset1.svg" className="absolute w-1/8 top-0 left-0" />
+      <img src="asset2.svg" className="absolute w-1/8 bottom-0 left-0" />
+      <img
+        src="asset3.svg"
+        className="absolute w-1/8 bottom-0 right-0 translate-x-2"
+      />
+      {/* <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -9,8 +17,8 @@ export default function Footer() {
         >
           <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
         </svg>
-      </div>
-      <div className="skew skew-top ml-for-radius">
+      </div> */}
+      {/* <div className="skew skew-top ml-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -18,32 +26,33 @@ export default function Footer() {
         >
           <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
         </svg>
-      </div>
-      <div className="py-20 bg-gray-50 radius-for-skewed">
+      </div> */}
+      <div className="pb-20 pt-0">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap mb-6 lg:mb-20">
-            <div className="mb-6 w-full lg:w-1/5">
-              <a className="text-3xl font-bold leading-none" href="#">
+            <div className="mb-auto w-full lg:w-1/5">
+              {/* <a className="text-3xl font-bold leading-none" href="#">
                 <img
                   className="h-12"
                   src="atis-assets/logo/atis/atis-mono-black.svg"
                   alt=""
                   width="auto"
                 />
-              </a>
+              </a> */}
+              <Logo className="mt-4" />
             </div>
             <div className="mb-5 w-full lg:w-1/5">
-              <p className="text-gray-400 leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                luctus eget justo.
+              <p className="leading-loose">
+                Fotowoltaika, magazynowanie energii, serwisy instalacji.
+              </p>
+              <p className="leading-loose">
+                Śląskie, Opolskie, Dolnośląskie, Małopolskie.
               </p>
             </div>
             <div className="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold">Office</h5>
-                <p className="text-gray-400 leading-loose">
-                  359 Hidden Valley Road, NY
-                </p>
+                <p className=" leading-loose">359 Hidden Valley Road, NY</p>
               </div>
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">
                 <h5 className="mb-4 font-bold">Contacts</h5>
@@ -52,9 +61,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="w-full flex justify-between">
-            <p className="text-sm text-gray-400">
-              © 2021. All rights reserved.
-            </p>
+            <p className="text-sm">© 2021. All rights reserved.</p>
             <div className="flex space-x-2 lg:space-x-4">
               <a href="#">
                 <img src="atis-assets/social/facebook.svg" alt="" />
@@ -69,7 +76,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="skew skew-bottom mr-for-radius">
+      {/* <div className="skew skew-bottom mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
           viewBox="0 0 10 10"
@@ -86,7 +93,7 @@ export default function Footer() {
         >
           <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 }

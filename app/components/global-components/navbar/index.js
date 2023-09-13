@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="border-b-2 border-b-gray-100 border-t-4 border-t-primaryGreen text-xl fixed w-screen h-32 flex justify-between items-center px-10 lg:px-16 py-4 bg-gray-50 top-0 left-0 z-50">
+    <div className="border-b-2 border-b-gray-100 border-t-4 border-t-primaryGreen text-xl fixed w-screen h-28 flex justify-between items-center px-10 lg:px-16 py-4 bg-gray-50 top-0 left-0 z-50">
       <Logo closeMobileMenu={closeMobileMenu} />
       <div className="pl-16 w-full flex justify-end content-center items-center gap-6">
         <ul

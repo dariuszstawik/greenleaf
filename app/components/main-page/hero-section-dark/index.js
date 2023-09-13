@@ -21,30 +21,30 @@ export default async function HeroSection() {
   const slider = await getContentfulHeroContent();
 
   return (
-    <section className="px-0 pt-[112px] bg-primaryGray w-screen h-screen flex flex-col xl:flex-row xl:overflow-hidden">
-      <div className="relative flex flex-col gap-10 justify-center items-center text-center bg-smartGray">
+    <section className="px-0 pt-[112px] bg-secondaryGreen w-screen h-screen flex flex-col xl:flex-row xl:overflow-hidden">
+      <div className="relative flex flex-col gap-10 justify-center  bg-smartGray">
         <img src="asset1.svg" className="absolute w-1/6 top-0 left-0" />
         <img src="asset2.svg" className="absolute w-1/6 bottom-0 left-0" />
-        <img
+        {/* <img
           src="asset3.svg"
           className="absolute w-1/6 bottom-0 right-0 translate-x-2"
-        />
-        <h1 className="px-10">
+        /> */}
+        <h1 className="px-16 text-white">
           {/* {horsesForSaleHeader.fields.title} */}
           Fotowoltaika <span>{` `}</span>
-          <span className="text-primaryGreen">
+          <span className="text-primaryOrange">
             {/* {horsesForSaleHeader.fields.titleSpan} */}
             na 100%
           </span>
         </h1>
-        <div className="w-28 h-1 rounded-sm bg-primaryGreen" />
-        <p className="px-16 text-lg">
+        <div className="w-28 h-1 ml-16 rounded-sm bg-white" />
+        <p className="px-16 text-lg text-white text-left">
           {/* {horsesForSaleHeader.fields.headerContent} */}
           Instalacje fotowoltaiczne, magazyny energii, serwisy fotowoltaiki dla
           klientów biznesowych i indywidualnych. Zatrudniamy doświadczonych
           fachowców, a serwisy realizujemy już do 72 godzin od zgłoszenia.
         </p>
-        <Button className="mx-auto mt-2">Sprawdź naszą ofertę</Button>
+        <Button className="ml-16 mr-auto mt-2">Sprawdź naszą ofertę</Button>
       </div>
 
       <div className="w-3/5 h-full shrink-0 hidden xl:block object-cover overflow-hidden">

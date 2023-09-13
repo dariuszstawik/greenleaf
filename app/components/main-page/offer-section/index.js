@@ -118,6 +118,10 @@ export default async function OfferSection() {
                 src="asset2.svg"
                 className="absolute h-1/4 bottom-0 left-0"
               /> */}
+              <img
+                src="asset1.svg"
+                className="absolute scale(-1) w-1/6 top-0 left-0"
+              />
             </div>
           </div>
 
