@@ -10,11 +10,11 @@
 
 body {
   font-family: 'AvenirLTStd-Roman', sans-serif;
-  @apply min-h-screen w-full overflow-x-hidden;  
+  @apply min-h-screen w-full overflow-x-hidden bg-gray-50 box-border text-slate-700;  
 }
 
 h1 {
-  @apply text-4xl lg:text-5xl
+  @apply text-4xl lg:text-5xl font-bold
 }
 
 h2 {
@@ -22,9 +22,13 @@ h2 {
 }
 
 h3 {
-  @apply text-lg lg:text-xl
+  @apply text-xl lg:text-2xl xl:text-3xl text-secondaryGreen
+}
+
+h4 {
+  @apply text-lg lg:text-xl xl:text-2xl
 }
 
 section {
-  @apply pt-32 px-32;
+  @apply pt-32 px-10 lg:px-32;
 }

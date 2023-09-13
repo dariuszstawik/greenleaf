@@ -5,8 +5,8 @@ const Logo = () => {
   return (
     <Image
       src="/green-leaf-logo.svg"
-      width="106"
-      height="93"
+      width="100"
+      height="88"
       className="m-10"
     />
   );

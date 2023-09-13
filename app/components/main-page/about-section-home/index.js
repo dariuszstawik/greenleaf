@@ -33,11 +33,11 @@ export default async function AboutSectionHome() {
                 alt=""
               />
               <h4 className="text-xl">Artur Brosch</h4>
-              <p className="text-green-600">Prezes Green Leaf Power</p>
+              <p className="text-primaryGreen">Prezes Green Leaf Power</p>
             </div>
             <div className="w-full lg:w-2/3">
               <svg
-                className="mb-4 text-green-600 h-10"
+                className="mb-4 text-primaryGreen h-10"
                 viewBox="0 0 32 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,9 +51,10 @@ export default async function AboutSectionHome() {
                   fill="currentColor"
                 ></path>
               </svg>
-              <h3 className="mb-6 text-3xl lg:text-4xl">
+              <h3 className="mb-6 leading-relaxed">
                 Nie jesteśmy największą firmą w branży, nie mamy długiej
-                historii, ale bardziej się staramy
+                historii, ale{" "}
+                <span className="text-primaryGreen">bardziej się staramy!</span>
               </h3>
               {/* <div>
                 <button className="mr-1 bg-gray-200 rounded-full p-1"></button>

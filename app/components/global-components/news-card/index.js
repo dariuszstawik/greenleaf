@@ -5,7 +5,7 @@ import Button from "../button";
 
 export default async function NewsCard({ title, lead, slug, img }) {
   return (
-    <div className="  max-w-screen h-[420px] sm:w-96 rounded-lg shadow-lg">
+    <div className="  max-w-screen h-[420px] sm:w-96 rounded-lg shadow-md">
       <Image
         className="w-contain rounded-t-lg"
         src={img ? `https:${img.fields.file.url}` : ""}

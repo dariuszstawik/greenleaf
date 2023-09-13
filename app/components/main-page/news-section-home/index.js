@@ -40,7 +40,7 @@ export default async function NewsSectionHome() {
 
   return (
     <section className="container mx-auto">
-      <div className="min-w-96 max-w-[800px] mx-auto my-6 flex flex-col items-center pt-20">
+      <div className="min-w-96 max-w-[800px] mx-auto mb-6 flex flex-col items-center pt-20">
         <SectionTitle>Aktualności</SectionTitle>
       </div>
 
