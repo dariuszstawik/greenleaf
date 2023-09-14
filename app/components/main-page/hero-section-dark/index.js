@@ -17,7 +17,7 @@ async function getContentfulHeroContent() {
   return slider;
 }
 
-export default async function HeroSection() {
+export default async function HeroSectionDark() {
   const slider = await getContentfulHeroContent();
 
   return (

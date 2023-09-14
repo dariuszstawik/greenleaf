@@ -22,21 +22,24 @@ export default async function HeroSection() {
 
   return (
     <section className="px-0 pt-[112px] bg-primaryGray w-screen h-screen flex flex-col xl:flex-row xl:overflow-hidden">
-      <div className="relative flex flex-col gap-10 justify-center items-center text-center bg-smartGray">
+      <div className="relative flex flex-col gap-8 justify-center items-center text-center bg-smartGray">
         <img src="asset1.svg" className="absolute w-1/6 top-0 left-0" />
         <img src="asset2.svg" className="absolute w-1/6 bottom-0 left-0" />
         <img
           src="asset3.svg"
           className="absolute w-1/6 bottom-0 right-0 translate-x-2"
         />
-        <h1 className="px-10">
-          {/* {horsesForSaleHeader.fields.title} */}
-          Fotowoltaika <span>{` `}</span>
-          <span className="text-primaryGreen">
-            {/* {horsesForSaleHeader.fields.titleSpan} */}
-            na 100%
-          </span>
-        </h1>
+        <div>
+          <p className="text-primaryGreen text-lg mb-4">Green Leaf Power</p>
+          <h1 className="px-10">
+            {/* {horsesForSaleHeader.fields.title} */}
+            Fotowoltaika <span>{` `}</span>
+            <span className="text-primaryGreen">
+              {/* {horsesForSaleHeader.fields.titleSpan} */}
+              na 100%
+            </span>
+          </h1>
+        </div>
         <div className="w-28 h-1 rounded-sm bg-primaryGreen" />
         <p className="px-16 text-lg">
           {/* {horsesForSaleHeader.fields.headerContent} */}

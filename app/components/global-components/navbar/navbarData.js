@@ -22,15 +22,15 @@ const navbarData = [
 
   {
     id: 4,
-    title: "Realizacje",
-    path: "/realizacje",
+    title: "Partnerzy",
+    path: "/partnerzy",
     button: false,
   },
 
   {
     id: 5,
-    title: "Rekomendacje",
-    path: "/rekomendacje",
+    title: "Aktualności",
+    path: "/aktualnosci",
     button: false,
   },
 
