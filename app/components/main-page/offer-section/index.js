@@ -3,7 +3,7 @@ import SectionTitle from "../../global-components/section-title";
 
 export default async function OfferSection() {
   return (
-    <section>
+    <section className="bg-primaryGray">
       {/* <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -97,7 +97,7 @@ export default async function OfferSection() {
                 alt=""
               />
             </div>
-            <div className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-primaryGray">
+            <div className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-gray-50">
               {/* <span className="text-sm text-gray-400">24 Jan, 2021</span> */}
               <h3 className="my-4 text-secondaryGreen">
                 Magazynowanie energii
