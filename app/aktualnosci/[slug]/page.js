@@ -1,3 +1,4 @@
+import PageHeader from "@/app/components/global-components/page-header";
 import SingleArticle from "@/app/components/global-components/single-article";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -16,13 +17,14 @@ async function getContentfulNewsPosts(slug) {
   return newsPost;
 }
 
-export default async function BlogPost({ params }) {
+export default async function NewsPost({ params }) {
   const slug = params.slug;
 
   const newsPost = await getContentfulNewsPosts(slug);
 
   return (
     <div>
+      <PageHeader>Aktualności</PageHeader>
       <SingleArticle
         title={newsPost.fields.tytul}
         lead={newsPost.fields.lead}

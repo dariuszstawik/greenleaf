@@ -1,6 +1,7 @@
 import { client } from "@/lib/contentful/client";
 import SectionTitle from "../components/global-components/section-title";
 import NewsCard from "../components/global-components/news-card";
+import PageHeader from "../components/global-components/page-header";
 
 async function getContentfulNewsPosts() {
   const resNewsPosts = await client.getEntries(
@@ -39,14 +40,17 @@ export default async function Aktualnosci() {
   };
 
   return (
-    <section className="container mx-auto">
-      {/* <div className="min-w-96 max-w-[800px] mx-auto mb-6 flex flex-col items-center">
+    <>
+      <PageHeader>Aktualności</PageHeader>
+      <section className="container mx-auto">
+        {/* <div className="min-w-96 max-w-[800px] mx-auto mb-6 flex flex-col items-center">
         <SectionTitle>Aktualności</SectionTitle>
       </div> */}
 
-      <ul className="grid grid-cols-1 gap-16 xl:grid-cols-3 mx-auto px-10">
-        {newsList(9)}
-      </ul>
-    </section>
+        <ul className="grid grid-cols-1 gap-16 xl:grid-cols-3 mx-auto px-10">
+          {newsList(9)}
+        </ul>
+      </section>
+    </>
   );
 }

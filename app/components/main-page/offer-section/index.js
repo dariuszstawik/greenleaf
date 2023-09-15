@@ -57,11 +57,16 @@ export default async function OfferSection() {
                 alt=""
               />
             </div>
-            <div className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-primaryGray">
+            <div
+              className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-secondaryGreen"
+              style={{
+                clipPath: "polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)",
+              }}
+            >
               {/* <span className="text-sm text-gray-400">24 Jan, 2021</span> */}
-              <h3 className="my-4 text-secondaryGreen">Fotowoltaika</h3>
-              <div className="w-10 h-1 rounded-sm bg-primaryGreen mb-4" />
-              <p className="mb-4 text-lg">
+              <h3 className="my-4 text-white">Fotowoltaika</h3>
+              <div className="w-10 h-1 rounded-sm bg-white mb-4" />
+              <p className="mb-4 text-lg text-white">
                 Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu
                 dictum. Integer sit amet erat sit amet lectus lacinia mattis.
                 Donec est tortor, fermentum at urna a, accumsan suscipit sem.

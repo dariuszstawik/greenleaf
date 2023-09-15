@@ -40,7 +40,7 @@ export default async function HeroSection() {
             </span>
           </h1>
         </div>
-        <div className="w-28 h-1 rounded-sm bg-primaryGreen" />
+        {/* <div className="w-28 h-1 rounded-sm bg-primaryGreen" /> */}
         <p className="px-16 text-lg">
           {/* {horsesForSaleHeader.fields.headerContent} */}
           Instalacje fotowoltaiczne, magazyny energii, serwisy fotowoltaiki dla
