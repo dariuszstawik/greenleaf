@@ -1,6 +1,10 @@
 export default function SectionTitle({ children, isWhite, isAlignedLeft }) {
   return (
-    <div className="m-6 flex flex-col justify-center items-center gap-2">
+    <div
+      className={`my-6 flex flex-col ${
+        !isAlignedLeft && "justify-center items-center"
+      } gap-2`}
+    >
       <p className="text-primaryGreen text-lg">Green Leaf Power</p>
       <h2
         className={`${isAlignedLeft ? "text-left" : "text-center"} ${

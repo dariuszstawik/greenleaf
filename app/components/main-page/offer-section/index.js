@@ -3,7 +3,7 @@ import SectionTitle from "../../global-components/section-title";
 
 export default async function OfferSection() {
   return (
-    <section className="bg-primaryGray">
+    <section className="bg-primaryGray mt-32 pb-32">
       {/* <div className="skew skew-top mr-for-radius">
         <svg
           className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -22,7 +22,7 @@ export default async function OfferSection() {
           <polygon fill="currentColor" points="0 10 10 0 10 10" />
         </svg>
       </div> */}
-      <div className="">
+      <div>
         <div className="container mx-auto px-4">
           <div className="mb-16 flex flex-col justify-center items-center">
             <SectionTitle>Nasza oferta</SectionTitle>
@@ -49,7 +49,7 @@ export default async function OfferSection() {
               </a>
             </div>
           </div> */}
-          <div className="mt-20 flex flex-wrap rounded-lg shadow-md overflow-hidden">
+          <div className="mt-20 flex flex-wrap rounded-lg overflow-hidden">
             <div className="w-full lg:w-1/2 rounded-l">
               <img
                 className="object-cover"
@@ -58,7 +58,7 @@ export default async function OfferSection() {
               />
             </div>
             <div
-              className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-secondaryGreen"
+              className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-secondaryGreen shadow-md"
               style={{
                 clipPath: "polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)",
               }}
@@ -89,7 +89,7 @@ export default async function OfferSection() {
             </div>
           </div>
 
-          <div className="mt-20 flex flex-wrap flex-row-reverse rounded-lg shadow-md overflow-hidden">
+          <div className="mt-20 flex flex-wrap flex-row-reverse rounded-lg overflow-hidden">
             <div className="w-full lg:w-1/2 rounded-l">
               <img
                 className="object-cover"
@@ -97,7 +97,12 @@ export default async function OfferSection() {
                 alt=""
               />
             </div>
-            <div className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-gray-50">
+            <div
+              className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-gray-50 shadow-md"
+              style={{
+                clipPath: "polygon(20% 0%, 100% 0, 100% 100%, 0 100%, 0% 25%)",
+              }}
+            >
               {/* <span className="text-sm text-gray-400">24 Jan, 2021</span> */}
               <h3 className="my-4 text-secondaryGreen">
                 Magazynowanie energii
@@ -123,22 +128,27 @@ export default async function OfferSection() {
                 src="asset2.svg"
                 className="absolute h-1/4 bottom-0 left-0"
               /> */}
-              <img
+              {/* <img
                 src="asset1.svg"
                 className="absolute scale(-1) w-1/6 top-0 left-0"
-              />
+              /> */}
             </div>
           </div>
 
-          <div className="mt-20 flex flex-wrap rounded-lg shadow-md overflow-hidden">
+          <div className="mt-20 flex flex-wrap rounded-lg overflow-hidden">
             <div className="w-full lg:w-1/2 rounded-l">
               <img className="object-cover" src="/glp_slider30.jpg" alt="" />
             </div>
-            <div className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-primaryGray">
+            <div
+              className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-secondaryGreen shadow-md"
+              style={{
+                clipPath: "polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)",
+              }}
+            >
               {/* <span className="text-sm text-gray-400">24 Jan, 2021</span> */}
-              <h3 className="my-4 text-secondaryGreen">Usługi serwisowe</h3>
-              <div className="w-10 h-1 rounded-sm bg-primaryGreen mb-4" />
-              <p className="mb-4 text-lg">
+              <h3 className="my-4 text-white">Usługi serwisowe</h3>
+              <div className="w-10 h-1 rounded-sm bg-white mb-4" />
+              <p className="mb-4 text-lg text-white">
                 Quisque id sagittis turpis. Nulla sollicitudin rutrum eros eu
                 dictum. Integer sit amet erat sit amet lectus lacinia mattis.
                 Donec est tortor, fermentum at urna a, accumsan suscipit sem.
@@ -156,7 +166,7 @@ export default async function OfferSection() {
               /> */}
               {/* <img
                 src="asset2.svg"
-                className="absolute h-1/4 bottom-0 left-0"
+                className="absolute h-1/5 bottom-0 left-0"
               /> */}
             </div>
           </div>

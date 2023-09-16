@@ -3,7 +3,11 @@ import SectionTitle from "../../global-components/section-title";
 
 export default async function AboutSectionHome() {
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section className="relative flex flex-col justify-center items-center">
+      {/* <img
+        src="asset3.svg"
+        className="absolute w-1/6 bottom-0 right-0 translate-x-2 bg-primaryGray"
+      /> */}
       <SectionTitle>Dlaczego my?</SectionTitle>
       {/* <div className="skew skew-top mr-for-radius"> */}
       {/* <svg

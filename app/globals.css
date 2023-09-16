@@ -32,3 +32,7 @@ h4 {
 section {
   @apply pt-32 px-10 lg:px-32;
 }
+
+p {
+  @apply leading-loose;
+}
