@@ -1,5 +1,6 @@
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
+import NewsSectionHome from "../components/main-page/news-section-home";
 import Features from "../components/o-nas-page/features";
 import Testimonials from "../components/o-nas-page/testimonials";
 
@@ -80,6 +81,7 @@ export default function oNas() {
         </div>
       </div>
       <Features />
+      <NewsSectionHome />
     </>
   );
 }
