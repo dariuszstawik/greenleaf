@@ -1,8 +1,8 @@
-export default function ListItem({ children }) {
+export default function ListItem({ children, isLast }) {
   return (
-    <div className="flex p-4 border-b">
+    <div className={`flex p-4 ${!isLast && "border-b"}`}>
       <svg
-        className="mr-4 mt-1"
+        className="mr-4 mt-1 w-[20px] h-[20px] shrink-0"
         width={20}
         height={20}
         viewBox="0 0 20 20"

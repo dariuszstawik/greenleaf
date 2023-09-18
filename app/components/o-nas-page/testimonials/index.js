@@ -16,7 +16,12 @@ export default function Testimonials() {
             websites
           </h2> */}
           <SectionTitle>Opinie klientów</SectionTitle>
-          <div className="mt-12 px-16 py-12 bg-white rounded-10">
+          <div
+            className="mt-12 px-16 py-12 bg-gray-50 rounded-10"
+            style={{
+              clipPath: "polygon(85% 0, 100% 20%, 100% 100%, 0 100%, 0 0)",
+            }}
+          >
             {/* <img
               className="mb-11"
               src="gradia-assets/images/testimonials/logo.svg"

@@ -14,15 +14,15 @@ export default function SerwisIGwarancje() {
           //   isReverse ? "lg:flex-row-reverse" : ""
           // }`}
         >
-          <div className="w-[700px] shrink-0">
-            <img src="/hero-img2.jpg" alt="" className="rounded-md" />
+          <div className="w-[700px]">
+            <img src="/serwis22.jpg" alt="" className="rounded-md" />
           </div>
 
-          <div className="ml-16 mr-16 lg:ml-28 lg:mr-32 flex flex-col gap-2 text-lg">
+          <div className="ml-8 mr-16 lg:ml-8 lg:mr-28 flex flex-col gap-2 text-lg">
             <SectionTitle isAlignedLeft>Serwis i gwarancje</SectionTitle>
             <p>
               {" "}
-              Oferujemy 5-cio letnią gwarancje prawidłowego działania
+              Oferujemy pięcioletnią letnią gwarancje prawidłowego działania
               instalacji, w tym:
             </p>
             <ul>
@@ -32,7 +32,7 @@ export default function SerwisIGwarancje() {
               <ListItem>
                 falownik zastępczy na czas jego naprawy przez producenta,
               </ListItem>
-              <ListItem>
+              <ListItem isLast>
                 możliwość przedłużenia gwarancji: maksymalnie do 10 lat.
               </ListItem>
             </ul>
