@@ -2,6 +2,7 @@
 import { Fade } from "react-awesome-reveal";
 import Button from "../../global-components/button";
 import SectionTitle from "../../global-components/section-title";
+import Link from "next/link";
 
 export default async function AboutSectionHome() {
   return (
@@ -31,12 +32,12 @@ export default async function AboutSectionHome() {
       </div> */}
       <div className="py-10">
         <div className="container mx-auto px-4">
-          <Fade direction="bottom" triggerOnce>
+          <Fade direction="bottom" delay={300} triggerOnce>
             <div className="max-w-6xl p-4 flex flex-wrap justify-center items-center">
               <div className="mb-6 w-full lg:w-1/3 text-center">
                 <img
                   className="mb-6 mx-auto w-32 h-32 rounded-full object-cover"
-                  src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1055&amp;q=80"
+                  src="/profile.jpg"
                   alt=""
                 />
                 <h4 className="text-xl">Artur Brosch</h4>
@@ -94,7 +95,9 @@ export default async function AboutSectionHome() {
           <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
         </svg>
       </div> */}
-      <Button>Sprawdź dowody</Button>
+      <Link href="/o-nas">
+        <Button>Sprawdź dowody</Button>
+      </Link>
     </section>
   );
 }

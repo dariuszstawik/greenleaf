@@ -1,7 +1,8 @@
+"use client";
+import { Slide } from "react-awesome-reveal";
 import PageHeader from "../components/global-components/page-header";
 import Realizations from "../components/global-components/realizations";
 import SectionTitle from "../components/global-components/section-title";
-import NewsSectionHome from "../components/main-page/news-section-home";
 import Features from "../components/o-nas-page/features";
 import Testimonials from "../components/o-nas-page/testimonials";
 
@@ -16,9 +17,11 @@ export default function oNas() {
         //   isReverse ? "lg:flex-row-reverse" : ""
         // }`}
       >
-        <div className="w-[700px] shrink-0">
-          <img src="/hero-img2.jpg" alt="" className="rounded-md" />
-        </div>
+        <Slide direction="right" triggerOnce>
+          <div className="w-[700px] shrink-0">
+            <img src="/realization12.jpg" alt="" className="rounded-md" />
+          </div>
+        </Slide>
 
         <div className="ml-16 mr-16 lg:ml-28 lg:mr-32 flex flex-col gap-2 text-lg">
           <SectionTitle isAlignedLeft>Kim jesteśmy?</SectionTitle>
@@ -28,14 +31,14 @@ export default function oNas() {
             doświadczonych inwestorów i menedżerów.
           </p>
           <p className="font-bold">
-            Zajmujey się instalacją oraz serwisowaniem instalacji
+            Zajmujemy się montażem oraz serwisowaniem instalacji
             fotowoltaicznych - zarówno dla klientów indywidualnych, jak też
             biznesowych. Działamy na terenie województw: śląskiego,
             małopolskiego, opolskiego i dolnośląskiego.
           </p>
           <p>
             Do współpracy zaprosiliśmy kompetentnych i doświadczonych
-            projektantów, koordynatorów prac oraz montażystów instalacji.
+            projektantów, koordynatorów prac oraz instalatorów.
           </p>
         </div>
       </div>
@@ -47,15 +50,17 @@ export default function oNas() {
         //   isReverse ? "lg:flex-row-reverse" : ""
         // }`}
       >
-        <div className="w-[700px] shrink-0">
-          <img src="/hero-img2.jpg" alt="" className="rounded-md" />
-        </div>
+        <Slide direction="left" delay={600} triggerOnce>
+          <div className="w-[700px] shrink-0">
+            <img src="/hero-img2.jpg" alt="" className="rounded-md" />
+          </div>
+        </Slide>
 
         <div className="ml-16 mr-16 lg:ml-16 lg:mr-32 flex flex-col gap-2 text-lg">
           <SectionTitle isAlignedLeft>Możesz nam zaufać</SectionTitle>
           <p>
             {" "}
-            W Green Leaf Power nie stawiamy tylko na skuteczność, ale również na
+            W Green Leaf Power stawiamy nie tylko na skuteczność, ale również
             trwałość.{" "}
             <span className="font-bold">
               Dlatego zbudowaliśmy zespół, któremu możesz zaufać na lata.{" "}

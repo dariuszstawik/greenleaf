@@ -1,3 +1,5 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
 import SectionTitle from "../../global-components/section-title";
 
 export default function Features() {
@@ -14,46 +16,48 @@ export default function Features() {
         <div className="mb-32">
           <SectionTitle isWhite>Dlaczego my?</SectionTitle>
         </div>
-        <div className="flex flex-wrap -mx-3 -mb-10 lg:-mb-16  z-20">
-          <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-10 lg:mb-16">
-            <div className="relative pt-16 pb-12 px-8 rounded-lg text-center">
-              <span className="absolute top-0 inset-x-0 -mt-6 flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-primaryGreen text-white">
-                1
-              </span>
-              <h3 className="mb-6 text-white">doświadczenie</h3>
-              <p className="text-white">
-                Jesteśmy młądą firmą, ale naszą siłą są specjaliści i fachowcy z
-                przynajmniej kilkulatnim doświadczeniem w branży
-                fotowoltaicznej.
-              </p>
+        <Fade direction="bottom" delay={600} triggerOnce>
+          <div className="flex flex-wrap -mx-3 -mb-10 lg:-mb-16  z-20">
+            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-10 lg:mb-16">
+              <div className="relative pt-16 pb-12 px-8 rounded-lg text-center">
+                <span className="absolute top-0 inset-x-0 -mt-6 flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-primaryGreen text-white">
+                  1
+                </span>
+                <h3 className="mb-6 text-white">doświadczenie</h3>
+                <p className="text-white">
+                  Jesteśmy młodą firmą, ale naszą siłą są specjaliści i fachowcy
+                  z przynajmniej kilkulatnim doświadczeniem w branży
+                  fotowoltaicznej.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-10 lg:mb-16">
-            <div className="relative pt-16 pb-12 px-8 rounded-lg text-center">
-              <span className="absolute top-0 inset-x-0 -mt-6 flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-primaryGreen text-white">
-                2
-              </span>
-              <h3 className="mb-6 text-white">szybkie serwisy</h3>
-              <p className="text-white">
-                W przypadku jakiejkolwiek usterki, nasi serwisanci usuną ją do
-                72h od zgłoszenia.
-              </p>
+            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-10 lg:mb-16">
+              <div className="relative pt-16 pb-12 px-8 rounded-lg text-center">
+                <span className="absolute top-0 inset-x-0 -mt-6 flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-primaryGreen text-white">
+                  2
+                </span>
+                <h3 className="mb-6 text-white">szybkie serwisy</h3>
+                <p className="text-white">
+                  W przypadku jakiejkolwiek usterki, nasi serwisanci usuną ją do
+                  72h od zgłoszenia.
+                </p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-10 lg:mb-16">
+              <div className="relative pt-16 pb-12 px-8 rounded-lg text-center">
+                <span className="absolute top-0 inset-x-0 -mt-6 flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-primaryGreen text-white">
+                  3
+                </span>
+                <h3 className="mb-6 text-white">zaangażowanie</h3>
+                <p className="text-white">
+                  Zrobimy wszystko, żebyś był/a zadowolony/a ze współpracy z
+                  naszą firmą!
+                </p>
+              </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 px-3 mb-10 lg:mb-16">
-            <div className="relative pt-16 pb-12 px-8 rounded-lg text-center">
-              <span className="absolute top-0 inset-x-0 -mt-6 flex justify-center items-center w-16 h-16 mx-auto rounded-full bg-primaryGreen text-white">
-                3
-              </span>
-              <h3 className="mb-6 text-white">zaangażowanie</h3>
-              <p className="text-white">
-                Zrobimy wszystko, żebyś był/a zadowolony/a ze współpracy z naszą
-                firmą!
-              </p>
-            </div>
-          </div>
-        </div>
+        </Fade>
       </div>
     </section>
   );

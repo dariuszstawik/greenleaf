@@ -18,7 +18,7 @@ export default function SerwisIGwarancje() {
         >
           <div className="w-[700px]">
             <Slide direction="right" triggerOnce>
-              <img src="/serwis22.jpg" alt="" className="rounded-md" />
+              <img src="/instalator223.jpg" alt="" className="rounded-md" />
             </Slide>
           </div>
 

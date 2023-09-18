@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default async function NewsCard({ title, lead, slug, img }) {
   return (
-    <Fade triggerOnce>
+    <Fade direction="bottom" delay={300} triggerOnce>
       <div className="flex flex-col max-w-screen h-[460px] sm:w-96 rounded-lg shadow-md bg-primaryGray">
         <Image
           className="w-contain rounded-t-lg"

@@ -98,11 +98,7 @@ export default function OfferSection() {
           <Fade direction="bottom" delay={600} triggerOnce>
             <div className="mt-20 flex flex-wrap flex-row-reverse rounded-lg overflow-hidden">
               <div className="w-full lg:w-1/2 rounded-l">
-                <img
-                  className="object-cover"
-                  src="/glp_slider20_rev.jpg"
-                  alt=""
-                />
+                <img className="object-cover" src="/panel11.jpg" alt="" />
               </div>
               <div
                 className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-gray-50 shadow-md"
@@ -158,10 +154,9 @@ export default function OfferSection() {
                 <h3 className="my-4 text-white">Usługi serwisowe</h3>
                 <div className="w-10 h-1 rounded-sm bg-white mb-4" />
                 <p className="mb-4 text-lg text-white">
-                  W przypadku gdy z jakiegoś powodu Twój wykonawca instalacji
-                  nie jest w stanie wykonać przeglądu lub naprawić niewłaściwie
-                  działającej instalacji pv, jesteśmy gotowi do wykonania
-                  niezbędnych prac.
+                  Twój wykonawca nie jest w stanie wykonać przeglądu lub
+                  naprawić niewłaściwie działającej instalacji pv? Zgłoś się do
+                  nas!
                 </p>
                 {/* <a
                 className="text-primaryGreen hover:text-secondaryGreen text-lg mb-4 mt-auto"
