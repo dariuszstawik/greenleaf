@@ -23,11 +23,20 @@ export default async function HeroSection() {
   return (
     <section className="px-0 pt-[112px] bg-primaryGray w-screen h-screen flex flex-col xl:flex-row xl:overflow-hidden">
       <div className="relative flex flex-col gap-8 justify-center items-center text-center bg-smartGray">
-        <img src="asset1.svg" className="absolute w-1/6 top-0 left-0" />
-        <img src="asset2.svg" className="absolute w-1/6 bottom-0 left-0" />
+        <img
+          src="asset1.svg"
+          className="absolute w-1/6 top-0 left-0"
+          alt="asset"
+        />
+        <img
+          src="asset2.svg"
+          className="absolute w-1/6 bottom-0 left-0"
+          alt="asset"
+        />
         <img
           src="asset3.svg"
           className="absolute w-1/6 bottom-0 right-0 translate-x-2"
+          alt="asset"
         />
         <div>
           <p className="text-primaryGreen text-lg mb-4">Green Leaf Power</p>

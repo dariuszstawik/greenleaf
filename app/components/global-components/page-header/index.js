@@ -7,7 +7,7 @@ const PageHeader = ({ children }) => {
         backgroundPosition: "center",
       }}
     >
-      <hi className="text-4xl lg:text-5xl text-white z-20">{children}</hi>
+      <h1 className="text-4xl lg:text-5xl text-white z-20">{children}</h1>
     </div>
   );
 };

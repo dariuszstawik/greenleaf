@@ -3,11 +3,20 @@ import Logo from "../logo";
 export default function Footer() {
   return (
     <section className="relative bg-primaryGray mt-32">
-      <img src="asset1.svg" className="absolute w-1/12 top-0 left-0" />
-      <img src="asset2.svg" className="absolute w-1/12 bottom-0 left-0" />
+      <img
+        src="asset1.svg"
+        className="absolute w-1/12 top-0 left-0"
+        alt="asset"
+      />
+      <img
+        src="asset2.svg"
+        className="absolute w-1/12 bottom-0 left-0"
+        alt="asset"
+      />
       <img
         src="asset3.svg"
         className="absolute w-1/12 bottom-0 right-0 translate-x-2"
+        alt="asset"
       />
       {/* <div className="skew skew-top mr-for-radius">
         <svg
@@ -65,7 +74,7 @@ export default function Footer() {
           </div>
           <div className="w-full flex justify-between">
             <p className="text-sm mx-auto">© 2021. All rights reserved.</p>
-            <div className="flex space-x-2 lg:space-x-4">
+            {/* <div className="flex space-x-2 lg:space-x-4">
               <a href="#">
                 <img src="atis-assets/social/facebook.svg" alt="" />
               </a>
@@ -75,7 +84,7 @@ export default function Footer() {
               <a href="#">
                 <img src="atis-assets/social/instagram.svg" alt="" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -26,7 +26,11 @@ export default async function HeroSectionDark() {
         className="pb-10 absolute flex flex-col gap-8 justify-center bg-secondaryGreen opacity-95 top-0 left-0 z-20 h-full w-[35%] mt-28 shadow-md"
         style={{ clipPath: "polygon(70% 0, 100% 25%, 100% 100%, 0 100%, 0 0)" }}
       >
-        <img src="asset1.svg" className="absolute w-1/6 top-0 left-0" />
+        <img
+          src="asset1.svg"
+          className="absolute w-1/6 top-0 left-0"
+          alt="asset"
+        />
         {/* <img src="asset2.svg" className="absolute w-1/6 bottom-0 left-0" /> */}
         {/* <img
           src="asset3.svg"

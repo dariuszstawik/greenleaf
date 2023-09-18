@@ -8,6 +8,7 @@ const Logo = ({ className }) => {
       width="100"
       height="88"
       className={`m-10 ${className}`}
+      alt="logo"
     />
   );
 };
