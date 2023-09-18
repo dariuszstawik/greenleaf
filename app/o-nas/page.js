@@ -1,5 +1,6 @@
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
+import Features from "../components/o-nas-page/features";
 import Testimonials from "../components/o-nas-page/testimonials";
 
 export default function oNas() {
@@ -14,10 +15,10 @@ export default function oNas() {
         // }`}
       >
         <div className="w-[700px] shrink-0">
-          <img src="/hero-img2.jpg" alt="" />
+          <img src="/hero-img2.jpg" alt="" className="rounded-md" />
         </div>
 
-        <div className="ml-16 mr-16 lg:ml-16 lg:mr-32 flex flex-col gap-2 text-lg">
+        <div className="ml-16 mr-16 lg:ml-28 lg:mr-32 flex flex-col gap-2 text-lg">
           <SectionTitle isAlignedLeft>Kim jesteśmy?</SectionTitle>
           <p>
             {" "}
@@ -45,7 +46,7 @@ export default function oNas() {
         // }`}
       >
         <div className="w-[700px] shrink-0">
-          <img src="/hero-img2.jpg" alt="" />
+          <img src="/hero-img2.jpg" alt="" className="rounded-md" />
         </div>
 
         <div className="ml-16 mr-16 lg:ml-16 lg:mr-32 flex flex-col gap-2 text-lg">
@@ -78,6 +79,7 @@ export default function oNas() {
           </p> */}
         </div>
       </div>
+      <Features />
     </>
   );
 }

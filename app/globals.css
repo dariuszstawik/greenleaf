@@ -34,5 +34,5 @@ section {
 }
 
 p {
-  @apply leading-loose;
+  @apply leading-relaxed;
 }

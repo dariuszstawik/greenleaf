@@ -22,20 +22,27 @@ const navbarData = [
 
   {
     id: 4,
+    title: "Serwis i gwarancje",
+    path: "/serwis-i-gwarancje",
+    button: false,
+  },
+
+  {
+    id: 5,
     title: "Partnerzy",
     path: "/partnerzy",
     button: false,
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Aktualności",
     path: "/aktualnosci",
     button: false,
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Kontakt",
     path: "/kontakt",
     button: true,
