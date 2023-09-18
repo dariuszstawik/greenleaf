@@ -52,7 +52,7 @@ export default async function HeroSectionDark() {
           {/* {horsesForSaleHeader.fields.headerContent} */}
           Instalacje fotowoltaiczne, magazyny energii, serwisy fotowoltaiki dla
           klientów biznesowych i indywidualnych. Zatrudniamy doświadczonych
-          fachowców, a serwisy realizujemy już do 72 godzin od zgłoszenia.
+          fachowców, a serwisy realizujemy już do 72 godzin od zgłoszenia!
         </p>
         <Button className="ml-16 mr-auto mt-2">Sprawdź naszą ofertę</Button>
       </div>

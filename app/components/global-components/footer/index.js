@@ -63,7 +63,7 @@ export default function Footer() {
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold">Biuro</h5>
                 <p className=" leading-loose">ul. 11 Listoada 11</p>
-                <p className=" leading-loose">40-018 Katowice</p>
+                <p className=" leading-loose">40-387 Katowice</p>
               </div>
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">
                 <h5 className="mb-4 font-bold">Kontakt</h5>

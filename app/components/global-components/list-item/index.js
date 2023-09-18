@@ -1,5 +1,10 @@
+"use client";
+
+import { Fade } from "react-awesome-reveal";
+
 export default function ListItem({ children, isLast }) {
   return (
+    // <Fade triggerOnce>
     <div className={`flex p-4 ${!isLast && "border-b"}`}>
       <svg
         className="mr-4 mt-1 w-[20px] h-[20px] shrink-0"
@@ -18,5 +23,6 @@ export default function ListItem({ children, isLast }) {
       </svg>
       <p>{children}</p>
     </div>
+    // </Fade>
   );
 }

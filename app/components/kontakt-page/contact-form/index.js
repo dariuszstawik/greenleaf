@@ -64,20 +64,20 @@ const ContactForm = ({ about1 }) => {
         className="relative w-1/2 mx-auto flex flex-col gap-2"
       >
         <label
-          htmlFor="firstName"
+          htmlFor="usersName"
           className="inline-block  mr-auto relative uppercase after:content-['*'] after:text-primaryGreen after:absolute after:-right-[10px] after:-top-[2px]"
         >
-          Imię
+          Imię i nazwisko
         </label>
         <input
-          id="firstName"
-          name="firstName"
+          id="usersName"
+          name="usersName"
           type="text"
           required
           className="relative border border-primaryGreen rounded-xl leading-8 px-4"
         ></input>
 
-        <label
+        {/* <label
           htmlFor="lastName"
           className="inline-block  mr-auto relative uppercase after:content-['*'] after:text-primaryGreen after:absolute after:-right-[10px] after:-top-[2px]"
         >
@@ -89,7 +89,7 @@ const ContactForm = ({ about1 }) => {
           type="text"
           required
           className="border border-primaryGreen rounded-xl leading-8 px-4"
-        ></input>
+        ></input> */}
 
         <label
           htmlFor="email"
