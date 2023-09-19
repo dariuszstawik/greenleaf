@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Avenir Roman', sans-serif;
-  @apply min-h-screen w-full overflow-x-hidden bg-gray-50 box-border text-slate-700;  
+  @apply min-h-screen w-full overflow-x-hidden bg-gray-50 box-border text-slate-700 text-lg;  
 }
 
 h1 {
@@ -34,5 +34,5 @@ section {
 }
 
 p {
-  @apply leading-relaxed;
+  @apply text-lg leading-relaxed;
 }
