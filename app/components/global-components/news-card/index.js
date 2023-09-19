@@ -5,7 +5,7 @@ import React from "react";
 import Button from "../button";
 import { Fade } from "react-awesome-reveal";
 
-export default async function NewsCard({ title, lead, slug, img }) {
+export default function NewsCard({ title, lead, slug, img }) {
   return (
     <Fade direction="bottom" delay={300} triggerOnce>
       <div className="flex flex-col max-w-screen h-[460px] sm:w-96 rounded-lg shadow-md bg-primaryGray">

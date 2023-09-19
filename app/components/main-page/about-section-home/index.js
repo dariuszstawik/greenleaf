@@ -4,7 +4,7 @@ import Button from "../../global-components/button";
 import SectionTitle from "../../global-components/section-title";
 import Link from "next/link";
 
-export default async function AboutSectionHome() {
+export default function AboutSectionHome() {
   return (
     <section className="relative flex flex-col justify-center items-center">
       {/* <img
