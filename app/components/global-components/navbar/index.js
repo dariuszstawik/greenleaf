@@ -31,6 +31,7 @@ const Navbar = () => {
           {navbarData.map((nav) => {
             return (
               <li
+                onClick={closeMobileMenu}
                 key={nav.id}
                 className={`${
                   nav.button ? "text-base" : "text-lg"

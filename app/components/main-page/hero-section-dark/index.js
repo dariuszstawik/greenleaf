@@ -58,14 +58,6 @@ export default async function HeroSectionDark() {
       </div>
 
       <div className="w-full h-full shrink-0 hidden xl:block object-cover overflow-hidden">
-        {/* <HeaderSlider
-          images={horsesForSaleHeader.fields.slider}
-          className="w-3/5 h-screen shrink-0 object-cover overflow-hidden"
-        /> */}
-        {/* <img
-          src="/hero-img2.png"
-          className="h-full shrink-0 object-cover overflow-hidden"
-        /> */}
         <HeaderSlider
           images={slider[0].fields}
           className="w-3/5 h-screen shrink-0 object-cover overflow-hidden"
