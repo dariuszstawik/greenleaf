@@ -7,9 +7,6 @@ import "react-awesome-slider/dist/styles.css";
 export default function HeaderSlider({ images, className }) {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
 
-  console.log("-------------------");
-  console.log(images.images);
-
   return (
     <div>
       <AutoplaySlider

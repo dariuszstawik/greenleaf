@@ -21,9 +21,9 @@ export default async function HeroSectionDark() {
   const slider = await getContentfulHeroContent();
 
   return (
-    <section className="relative px-0 pt-[112px] bg-primaryGray w-screen h-screen flex flex-col justify-end xl:flex-row xl:overflow-hidden">
+    <section className="relative px-0 pt-[112px] bg-primaryGray w-screen min-h-screen lg:h-screen flex flex-col justify-end xl:flex-row overflow-hidden">
       <div
-        className="pb-10 absolute flex flex-col gap-8 justify-center bg-secondaryGreen opacity-95 top-0 left-0 z-20 h-full w-[35%] mt-28 shadow-md"
+        className="pb-10 absolute flex flex-col gap-8 justify-center bg-secondaryGreen opacity-95 top-0 left-0 z-20 h-full lg:w-[35%] mt-28 shadow-md"
         style={{ clipPath: "polygon(70% 0, 100% 25%, 100% 100%, 0 100%, 0 0)" }}
       >
         <img
@@ -57,10 +57,10 @@ export default async function HeroSectionDark() {
         <Button className="ml-16 mr-auto mt-2">Sprawdź naszą ofertę</Button>
       </div>
 
-      <div className="w-full h-full shrink-0 hidden xl:block object-cover overflow-hidden">
+      <div className="lg:w-full lg:h-full xl:shrink-0">
         <HeaderSlider
           images={slider[0].fields}
-          className="w-3/5 h-screen shrink-0 object-cover overflow-hidden"
+          className="w-full lg:w-3/5 h-screen xl:shrink-0"
         />
       </div>
     </section>
