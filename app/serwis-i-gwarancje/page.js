@@ -16,11 +16,11 @@ export default function SerwisIGwarancje() {
           //   isReverse ? "lg:flex-row-reverse" : ""
           // }`}
         >
-          <div className="w-[700px]">
-            <Slide direction="right" triggerOnce>
+          <Slide direction="right" triggerOnce>
+            <div className="relative w-[700px] rounded-md after:content-[''] after:absolute after-rounded-md after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-30">
               <img src="/instalator223.jpg" alt="" className="rounded-md" />
-            </Slide>
-          </div>
+            </div>
+          </Slide>
 
           <div className="ml-8 mr-16 lg:ml-8 lg:mr-28 flex flex-col gap-2 text-lg">
             <Fade triggerOnce>

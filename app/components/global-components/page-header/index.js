@@ -1,7 +1,7 @@
 const PageHeader = ({ children }) => {
   return (
     <div
-      className="mt-28 relative w-screen px-32 py-20 bg-primary flex after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-80"
+      className="mt-28 relative w-screen px-32 py-20 bg-primary flex after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-70"
       style={{
         backgroundImage: 'url("/leaves_texture.png")',
         backgroundPosition: "center",

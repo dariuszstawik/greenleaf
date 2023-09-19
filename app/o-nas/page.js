@@ -18,7 +18,7 @@ export default function oNas() {
         // }`}
       >
         <Slide direction="right" triggerOnce>
-          <div className="w-[700px] shrink-0">
+          <div className="relative w-[700px] shrink-0 rounded-md after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-20">
             <img src="/realization12.jpg" alt="" className="rounded-md" />
           </div>
         </Slide>
@@ -51,7 +51,7 @@ export default function oNas() {
         // }`}
       >
         <Slide direction="left" delay={600} triggerOnce>
-          <div className="w-[700px] shrink-0">
+          <div className="relative w-[700px] shrink-0 rounded-md after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-20">
             <img src="/hero-img2.jpg" alt="" className="rounded-md" />
           </div>
         </Slide>
