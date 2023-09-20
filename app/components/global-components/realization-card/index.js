@@ -14,11 +14,11 @@ export default function RealizationCard() {
         <div className="p-4 flex flex-col flex-grow justify-between">
           <div className="my-4">
             <AddressIcon />
-            <h4 className="inline-block">Katowice</h4>
+            <p className="inline-block">Katowice</p>
           </div>
           <div>
             <ElectricityIcon />
-            <h4 className="inline-block">5 kWp</h4>
+            <p className="inline-block">5 kWp</p>
           </div>
 
           <Button className="ml-auto mt-auto">zobacz</Button>

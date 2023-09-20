@@ -52,18 +52,16 @@ export default function Footer() {
             </div>
             <div className="mb-5 w-full lg:w-1/5">
               <h4 className="mb-2">Green Leaf Power</h4>
-              <p className="leading-loose">
+              <p className="">
                 Fotowoltaika, magazynowanie energii, serwisy instalacji.
               </p>
-              <p className="leading-loose">
-                Śląskie, Opolskie, Dolnośląskie, Małopolskie.
-              </p>
+              <p className="">Śląskie, Opolskie, Dolnośląskie, Małopolskie.</p>
             </div>
             <div className="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold">Biuro</h5>
-                <p className=" leading-loose">ul. 11 Listoada 11</p>
-                <p className=" leading-loose">40-387 Katowice</p>
+                <p className="leading-loose">ul. 11 Listoada 11</p>
+                <p className="leading-loose">40-387 Katowice</p>
               </div>
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">
                 <h5 className="mb-4 font-bold">Kontakt</h5>

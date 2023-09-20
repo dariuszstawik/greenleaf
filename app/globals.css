@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl lg:text-5xl
+  @apply text-3xl lg:text-4xl
 }
 
 h3 {
@@ -34,5 +34,5 @@ section {
 }
 
 p {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-normal antialiased;
 }
