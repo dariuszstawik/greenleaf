@@ -5,6 +5,7 @@ import Realizations from "../components/global-components/realizations";
 import SectionTitle from "../components/global-components/section-title";
 import Features from "../components/o-nas-page/features";
 import Testimonials from "../components/o-nas-page/testimonials";
+import Button from "../components/global-components/button";
 
 export default function oNas() {
   return (
@@ -30,16 +31,20 @@ export default function oNas() {
             Green Leaf Power to firma, która narodziła się z pasji
             doświadczonych inwestorów i menedżerów.
           </p>
-          <p className="font-bold">
-            Zajmujemy się montażem oraz serwisowaniem instalacji
-            fotowoltaicznych - zarówno dla klientów indywidualnych, jak też
-            biznesowych. Działamy na terenie województw: śląskiego,
-            małopolskiego, opolskiego i dolnośląskiego.
+          <p className="">
+            Zajmujemy się{" "}
+            <strong>
+              montażem oraz serwisowaniem instalacji fotowoltaicznych{" "}
+            </strong>
+            - zarówno dla klientów indywidualnych, jak też biznesowych. Działamy
+            na terenie województw: śląskiego, małopolskiego, opolskiego i
+            dolnośląskiego.
           </p>
           <p>
             Do współpracy zaprosiliśmy kompetentnych i doświadczonych
             projektantów, koordynatorów prac oraz instalatorów.
           </p>
+          <Button className="mr-auto mt-6">Sprawdź ofertę</Button>
         </div>
       </div>
       <Testimonials />
@@ -80,10 +85,7 @@ export default function oNas() {
             Tylko zadowolony klient jest dla nas gwarancją, że jesteśmy na
             właściwej drodze.
           </p>
-          {/* <p>
-            Do współpracy zaprosiliśmy kompetentnych i doświadczonych
-            projektantów, koordynatorów prac oraz montażystów instalacji.
-          </p> */}
+          <Button className="mr-auto mt-6">Sprawdź ofertę</Button>
         </div>
       </div>
       <Features />
