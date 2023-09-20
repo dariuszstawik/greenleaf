@@ -5,9 +5,13 @@ import Link from "next/link";
 import navbarData from "./navbarData";
 import Button from "../button";
 import Hamburger from "../hamburger";
+// import { useRouter } from "next/router";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
+  // const router = useRouter();
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuActive(!isMobileMenuActive);
@@ -29,15 +33,22 @@ const Navbar = () => {
           }
         >
           {navbarData.map((nav) => {
+            const isActive = pathname === nav.path;
+
             return (
               <li
                 onClick={closeMobileMenu}
                 key={nav.id}
                 className={`${
                   nav.button ? "text-base" : "text-lg"
-                } text-slate-700 hover:text-slate-900 cursor-pointer`}
+                } text-slate-700 hover:text-slate-900 cursor-pointer ${
+                  isActive && "text-primaryGreen"
+                }}`}
               >
-                <Link href={nav.path}>
+                <Link
+                  href={nav.path}
+                  className={`${isActive && "text-primaryGreen"}`}
+                >
                   {nav.button ? <Button>{nav.title}</Button> : nav.title}
                 </Link>
               </li>
