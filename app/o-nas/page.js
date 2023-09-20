@@ -32,13 +32,13 @@ export default function oNas() {
             doświadczonych inwestorów i menedżerów.
           </p>
           <p className="">
-            Zajmujemy się{" "}
-            <strong>
-              montażem oraz serwisowaniem instalacji fotowoltaicznych{" "}
-            </strong>
-            - zarówno dla klientów indywidualnych, jak też biznesowych. Działamy
-            na terenie województw: śląskiego, małopolskiego, opolskiego i
-            dolnośląskiego.
+            Zajmujemy się <span> </span>
+            <span className=" text-primaryGreen">
+              montażem oraz serwisowaniem instalacji fotowoltaicznych - zarówno
+              dla klientów indywidualnych, jak też biznesowych.{" "}
+            </span>
+            Działamy na terenie województw: śląskiego, małopolskiego, opolskiego
+            i dolnośląskiego.
           </p>
           <p>
             Do współpracy zaprosiliśmy kompetentnych i doświadczonych
@@ -67,7 +67,7 @@ export default function oNas() {
             {" "}
             W Green Leaf Power stawiamy nie tylko na skuteczność, ale również
             trwałość.{" "}
-            <span className="font-bold">
+            <span className="text-primaryGreen">
               Dlatego zbudowaliśmy zespół, któremu możesz zaufać na lata.{" "}
             </span>
             Nasza firma to ludzie, którzy tworzą ją od podstaw. Dbamy o naszych
@@ -78,7 +78,7 @@ export default function oNas() {
           </p>
           <p className="">
             Wyznajemy filozofię, iż{" "}
-            <span className="font-bold">
+            <span className="text-primaryGreen">
               każdy klient jest naszym partnerem i ma swój udział w sukcesie
               naszej firmy.
             </span>{" "}
