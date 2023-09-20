@@ -3,19 +3,14 @@ import { Fade, Slide } from "react-awesome-reveal";
 import ListItem from "../components/global-components/list-item";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
+import Button from "../components/global-components/button";
 
 export default function SerwisIGwarancje() {
   return (
     <>
       <PageHeader>Serwis i gwarancje</PageHeader>
       <section>
-        <div
-          className={`w-full pb-16 flex flex-col lg:flex-row-reverse`}
-
-          // ${
-          //   isReverse ? "lg:flex-row-reverse" : ""
-          // }`}
-        >
+        <div className={`w-full pb-16 flex flex-col lg:flex-row-reverse`}>
           <Slide direction="right" triggerOnce>
             <div className="relative w-[700px] rounded-md after:content-[''] after:absolute after-rounded-md after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-30">
               <img src="/instalator223.jpg" alt="" className="rounded-md" />
@@ -34,7 +29,7 @@ export default function SerwisIGwarancje() {
               </p>
             </Fade>
             <Fade cascade triggerOnce>
-              <ul>
+              <ul className="mb-4">
                 <ListItem>roczny przegląd instalacji,</ListItem>
                 <ListItem>czas reakcji na zgłoszenie awarii: 24h,</ListItem>
                 <ListItem>czas usunięcia awarii: 72h,</ListItem>
@@ -43,6 +38,7 @@ export default function SerwisIGwarancje() {
                   możliwość przedłużenia gwarancji: maksymalnie do 10 lat.
                 </ListItem>
               </ul>
+              <Button>Zapytaj o szczegóły</Button>
             </Fade>
           </div>
         </div>

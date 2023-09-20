@@ -2,10 +2,10 @@
 
 import { Fade } from "react-awesome-reveal";
 
-export default function ListItem({ children, isLast }) {
+export default function ListItem({ children, isLast, className }) {
   return (
     // <Fade triggerOnce>
-    <div className={`flex p-4 ${!isLast && "border-b"}`}>
+    <div className={`flex py-4 ${!isLast && "border-b"} ${className}`}>
       <svg
         className="mr-4 mt-1 w-[20px] h-[20px] shrink-0"
         width={20}
