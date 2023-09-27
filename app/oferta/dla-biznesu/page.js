@@ -3,6 +3,7 @@ import Button from "@/app/components/global-components/button";
 import ListItem from "@/app/components/global-components/list-item";
 import PageHeader from "@/app/components/global-components/page-header";
 import SectionTitle from "@/app/components/global-components/section-title";
+import Link from "next/link";
 import { Fade, Slide } from "react-awesome-reveal";
 
 export default function OfertaDlaBiznesu() {
@@ -99,7 +100,9 @@ export default function OfertaDlaBiznesu() {
             skutecznie kontrolujemy proces montażu naszych rozwiązań, jak
             również zapewniamy sprawny serwis.
           </p>
-          <Button className="mr-auto mt-6">Skontaktuj się z nami</Button>
+          <Button className="mr-auto mt-6">
+            <Link href="/kontakt">Skontaktuj się z nami</Link>
+          </Button>
         </div>
       </div>
     </>

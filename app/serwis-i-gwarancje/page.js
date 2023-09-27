@@ -4,6 +4,7 @@ import ListItem from "../components/global-components/list-item";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import Button from "../components/global-components/button";
+import Link from "next/link";
 
 export default function SerwisIGwarancje() {
   return (
@@ -36,7 +37,9 @@ export default function SerwisIGwarancje() {
                 <ListItem>falownik zastępczy na czas jego naprawy,</ListItem>
                 <ListItem isLast>możliwość przedłużenia gwarancji.</ListItem>
               </ul>
-              <Button>Zapytaj o szczegóły</Button>
+              <Button>
+                <Link href="/kontakt"> Zapytaj o szczegóły</Link>
+              </Button>
             </Fade>
           </div>
         </div>

@@ -5,7 +5,11 @@ export default function SectionTitle({ children, isWhite, isAlignedLeft }) {
         !isAlignedLeft && "justify-center items-center"
       } gap-2`}
     >
-      <p className={`${isWhite ? "text-white" : "text-primaryGreen"} text-lg`}>
+      <p
+        className={`${
+          isWhite ? "text-white" : "text-primaryGreen"
+        } text-lg my-0`}
+      >
         Green Leaf Power
       </p>
       <h2

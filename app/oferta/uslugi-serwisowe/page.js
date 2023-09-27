@@ -58,7 +58,10 @@ export default function OfertaDlaDomu() {
             skutecznie kontrolujemy proces montażu naszych rozwiązań, jak
             również zapewniamy sprawny serwis.
           </p>
-          <Button className="mr-auto mt-6">Skontaktuj się z nami</Button>
+          <Button className="mr-auto mt-6">
+            {" "}
+            <Link href="/kontakt">Skontaktuj się z nami</Link>
+          </Button>
         </div>
       </div>
     </>

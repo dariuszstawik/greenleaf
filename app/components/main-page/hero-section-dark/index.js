@@ -1,6 +1,7 @@
 import { client } from "@/lib/contentful/client";
 import Button from "../../global-components/button";
 import HeaderSlider from "../header-slider";
+import Link from "next/link";
 
 async function getContentfulHeroContent() {
   const resSlider = await client.getEntries(
@@ -33,7 +34,9 @@ export default async function HeroSectionDark() {
         />
         <div>
           {/* <p className="text-white text-lg px-16 mb-4">Green Leaf Power</p> */}
-          <h1 className="px-16 text-white">Green Leaf Power</h1>
+          <h1 className="px-16 text-white">
+            Green Leaf <span className="block mt-4"> Power </span>
+          </h1>
         </div>
         <div className="w-28 h-1 ml-16 rounded-sm bg-primaryGreen" />
         <p className="mx-16 text-lg text-white text-left ">
@@ -42,7 +45,9 @@ export default async function HeroSectionDark() {
           także serwisy fotowoltaiki dla klientów biznesowych oraz
           indywidualnych.
         </p>
-        <Button className="ml-16 mr-auto mt-2">Sprawdź naszą ofertę</Button>
+        <Button className="ml-16 mr-auto mt-2">
+          <Link href="/oferta">Sprawdź naszą ofertę</Link>
+        </Button>
       </div>
 
       <div className="lg:w-full lg:h-full xl:shrink-0">

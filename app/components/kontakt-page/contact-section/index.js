@@ -9,8 +9,6 @@ import { Slide } from "react-awesome-reveal";
 export default function ContactSection() {
   return (
     <section className="flex flex-col xl:flex-row-reverse">
-      {/* <div className={"w-full py-16 flex flex-col xl:flex-row"}> */}
-
       <Slide direction="right" delay={300} triggerOnce>
         <div className="w-[700px] shrink-0">
           <Iframe
@@ -27,22 +25,30 @@ export default function ContactSection() {
 
       <div className="ml-16 mr-16">
         <SectionTitle isAlignedLeft>Kontakt</SectionTitle>
-        <div className="flex flex-col gap-4 my-10">
-          <p className="mb-4">
+        <div className="flex flex-col gap-4 my-6">
+          <p className="mb-2">
             Biuro firmy znajduje się w Katowicach. Zapraszamy do kontaktu!
           </p>
-          <p>
+          <p className="my-0">
             <AddressIcon />
             ul. 11 Listopada 11, 40-387 Katowice
           </p>
-          <p>
+          <p className="my-0">
             <PhoneIcon />
             536 108 864
           </p>
-          <p>
+          <p className="my-0">
             <EmailIcon />
             biuro@greenleafpower.pl
           </p>
+          <div className="flex mt-2">
+            <a href="https://www.facebook.com/GreenLeafPowerPL">
+              <img src="/facebook.svg" className="w-8 mr-4" />
+            </a>
+            <span className="text-primaryGreen">
+              dołącz do nas na Facebooku
+            </span>
+          </div>
         </div>
       </div>
     </section>

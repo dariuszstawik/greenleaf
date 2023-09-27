@@ -8,9 +8,9 @@ import { Fade } from "react-awesome-reveal";
 export default function NewsCard({ title, lead, slug, img }) {
   return (
     <Fade direction="bottom" delay={300} triggerOnce>
-      <div className="flex flex-col max-w-screen h-[500px] sm:w-96 rounded-lg shadow-md bg-primaryGray">
+      <div className="flex flex-col max-w-screen h-[520px] sm:w-96 rounded-lg shadow-md bg-primaryGray">
         <Image
-          className="w-contain rounded-t-lg"
+          className="w-contain object-cover h-[40%] rounded-t-lg"
           src={img ? `https:${img.fields.file.url}` : ""}
           width={img?.fields?.file?.details?.image?.width}
           height={img?.fields?.file?.details?.image?.height}

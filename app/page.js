@@ -5,6 +5,7 @@ import AboutSectionHome from "./components/main-page/about-section-home";
 import SectionTitle from "./components/global-components/section-title";
 import NewsSectionHome from "./components/main-page/news-section-home";
 import HeroSectionDark from "./components/main-page/hero-section-dark";
+import Logos from "./components/global-components/logos";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSectionHome />
       <OfferSection />
       <NewsSectionHome />
+      <Logos />
     </main>
   );
 }

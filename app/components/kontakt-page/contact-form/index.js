@@ -130,7 +130,7 @@ const ContactForm = ({ about1 }) => {
           className="border border-primaryGreen rounded-xl leading-8 px-4"
         ></textarea>
 
-        <Button isOrange type="submit" className="ml-auto px-8">
+        <Button isOrange type="submit" className="ml-auto px-8 mt-4">
           Wyślij
         </Button>
         {/* {showNotification && (

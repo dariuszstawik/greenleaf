@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  @apply text-xl lg:text-2xl xl:text-3xl text-secondaryGreen
+  @apply text-xl lg:text-2xl xl:text-3xl text-secondaryGreen my-4
 }
 
 h4 {
@@ -34,5 +34,5 @@ section {
 }
 
 p {
-  @apply text-lg leading-normal antialiased;
+  @apply text-lg leading-normal antialiased my-2;
 }

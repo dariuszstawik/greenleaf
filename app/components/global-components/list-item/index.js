@@ -41,7 +41,7 @@ export default function ListItem({ children, isLast, className, isNested }) {
           />
         </svg>
       )}
-      <p>{children}</p>
+      <p className="my-0">{children}</p>
     </div>
     // </Fade>
   );
