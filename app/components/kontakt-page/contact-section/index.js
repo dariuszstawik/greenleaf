@@ -29,9 +29,7 @@ export default function ContactSection() {
         <SectionTitle isAlignedLeft>Kontakt</SectionTitle>
         <div className="flex flex-col gap-4 my-10">
           <p className="mb-4">
-            Działamy na terenie województw: śląskiego, opolskiego,
-            dolnośląskiego oraz małopolskiego. Biuro firmy znajduje się w
-            Katowicach. Zapraszamy do kontaktu!
+            Biuro firmy znajduje się w Katowicach. Zapraszamy do kontaktu!
           </p>
           <p>
             <AddressIcon />
@@ -39,7 +37,7 @@ export default function ContactSection() {
           </p>
           <p>
             <PhoneIcon />
-            600 000 000
+            536 108 864
           </p>
           <p>
             <EmailIcon />

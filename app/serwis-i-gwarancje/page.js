@@ -12,8 +12,8 @@ export default function SerwisIGwarancje() {
       <section>
         <div className={`w-full pb-16 flex flex-col lg:flex-row-reverse`}>
           <Slide direction="right" triggerOnce>
-            <div className="relative w-[700px] rounded-md after:content-[''] after:absolute after-rounded-md after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-30">
-              <img src="/instalator223.jpg" alt="" className="rounded-md" />
+            <div className="relative w-[700px] rounded-md after:content-[''] after:absolute after-rounded-md after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-10">
+              <img src="/instalator5.jpg" alt="" className="rounded-md" />
             </div>
           </Slide>
 
@@ -25,7 +25,7 @@ export default function SerwisIGwarancje() {
               <p>
                 {" "}
                 Oferujemy pięcioletnią letnią gwarancje prawidłowego działania
-                instalacji, w tym:
+                instalacji PV, w tym:
               </p>
             </Fade>
             <Fade cascade triggerOnce>
@@ -34,9 +34,7 @@ export default function SerwisIGwarancje() {
                 <ListItem>czas reakcji na zgłoszenie awarii: 24h,</ListItem>
                 <ListItem>czas usunięcia awarii: 72h,</ListItem>
                 <ListItem>falownik zastępczy na czas jego naprawy,</ListItem>
-                <ListItem isLast>
-                  możliwość przedłużenia gwarancji: maksymalnie do 10 lat.
-                </ListItem>
+                <ListItem isLast>możliwość przedłużenia gwarancji.</ListItem>
               </ul>
               <Button>Zapytaj o szczegóły</Button>
             </Fade>

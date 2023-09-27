@@ -37,8 +37,8 @@ export default function oNas() {
               montażem oraz serwisowaniem instalacji fotowoltaicznych - zarówno
               dla klientów indywidualnych, jak też biznesowych.{" "}
             </span>
-            Działamy na terenie województw: śląskiego, małopolskiego, opolskiego
-            i dolnośląskiego.
+            {/* Działamy na terenie województw: śląskiego, małopolskiego, opolskiego
+            i dolnośląskiego. */}
           </p>
           <p>
             Do współpracy zaprosiliśmy kompetentnych i doświadczonych
@@ -47,7 +47,8 @@ export default function oNas() {
           <Button className="mr-auto mt-6">Sprawdź ofertę</Button>
         </div>
       </div>
-      <Testimonials />
+      <Features />
+      {/* <Testimonials /> */}
       <div
         className={`w-full py-16 flex flex-col lg:flex-row`}
 
@@ -88,9 +89,9 @@ export default function oNas() {
           <Button className="mr-auto mt-6">Sprawdź ofertę</Button>
         </div>
       </div>
-      <Features />
+
       {/* <NewsSectionHome /> */}
-      <Realizations />
+      {/* <Realizations /> */}
     </>
   );
 }

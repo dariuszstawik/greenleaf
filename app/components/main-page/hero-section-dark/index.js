@@ -31,28 +31,16 @@ export default async function HeroSectionDark() {
           className="absolute w-1/6 top-0 left-0"
           alt="asset"
         />
-        {/* <img src="asset2.svg" className="absolute w-1/6 bottom-0 left-0" /> */}
-        {/* <img
-          src="asset3.svg"
-          className="absolute w-1/6 bottom-0 right-0 translate-x-2"
-        /> */}
         <div>
-          <p className="text-white text-lg px-16 mb-4">Green Leaf Power</p>
-          <h1 className="px-16 text-white">
-            {/* {horsesForSaleHeader.fields.title} */}
-            Fotowoltaika <span>{` `}</span>
-            <span className="block mr-auto pt-4 text-white border-b-primaryGreen">
-              {/* {horsesForSaleHeader.fields.titleSpan} */}
-              na 100%
-            </span>
-          </h1>
+          {/* <p className="text-white text-lg px-16 mb-4">Green Leaf Power</p> */}
+          <h1 className="px-16 text-white">Green Leaf Power</h1>
         </div>
         <div className="w-28 h-1 ml-16 rounded-sm bg-primaryGreen" />
         <p className="mx-16 text-lg text-white text-left ">
           {/* {horsesForSaleHeader.fields.headerContent} */}
-          Instalacje fotowoltaiczne, magazyny energii, serwisy fotowoltaiki dla
-          klientów biznesowych i indywidualnych. Zatrudniamy doświadczonych
-          fachowców, a serwisy realizujemy już do 72 godzin od zgłoszenia!
+          Instalacje fotowoltaiczne, magazyny energii, systemy smart home, a
+          także serwisy fotowoltaiki dla klientów biznesowych oraz
+          indywidualnych.
         </p>
         <Button className="ml-16 mr-auto mt-2">Sprawdź naszą ofertę</Button>
       </div>

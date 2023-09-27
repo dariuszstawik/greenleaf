@@ -25,7 +25,9 @@ export default function Partnerzy() {
             </ul>
           </div>
           <div className="w-1/2 flex justify-center">
-            <img src="MP-Solar_logo.png" alt="" className="w-[360px]" />
+            <a href="https://www.mpsolar.pl/" target="_blank">
+              <img src="MP-Solar_logo.png" alt="" className="w-[360px]" />
+            </a>
           </div>
         </div>
         <hr className="w-screen" />
@@ -35,7 +37,9 @@ export default function Partnerzy() {
             <p>partner w zakresie rozwiązań przemysłowych magazynów energii</p>
           </div>
           <div className="w-1/2 flex justify-center">
-            <img src="NRG_logo.png" alt="" className="w-[360px]" />
+            <a href="https://nrgproject.pl/" target="_blank">
+              <img src="NRG_logo.png" alt="" className="w-[360px]" />
+            </a>
           </div>
         </div>
       </section>

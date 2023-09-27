@@ -2,6 +2,7 @@
 import { Fade, Slide } from "react-awesome-reveal";
 import Button from "../../global-components/button";
 import SectionTitle from "../../global-components/section-title";
+import Link from "next/link";
 
 export default function OfferSection() {
   return (
@@ -17,11 +18,7 @@ export default function OfferSection() {
           <Fade direction="bottom" delay={600} triggerOnce>
             <div className="mt-20 flex flex-wrap rounded-lg overflow-hidden">
               <div className="w-full lg:w-1/2 rounded-lg flex object-cover">
-                <img
-                  className="object-cover"
-                  src="/glp_slider20_rev.jpg"
-                  alt=""
-                />
+                <img className="object-cover" src="/panel11.jpg" alt="" />
               </div>
               <div
                 className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-secondaryGreen shadow-md"
@@ -32,12 +29,14 @@ export default function OfferSection() {
                 <h3 className="my-4 text-white">Fotowoltaika</h3>
                 <div className="w-10 h-1 rounded-sm bg-white mb-4" />
                 <p className="mb-4 text-lg text-white">
-                  Dla klientów indywidualnych, firm oraz gospodarstw rolnych.
-                  Poznaj naszą ofertę i dowiedz się, ile zyskasz dzięki energii
-                  słonecznej od Green Leaf Power.
+                  Dla firm, gospodarstw rolnych, a także klientów
+                  indywidualnych. Poznaj naszą ofertę i dowiedz się, ile zyskasz
+                  dzięki energii słonecznej od Green Leaf Power.
                 </p>
 
-                <Button className="mb-2 mt-auto ml-auto">Sprawdź ofertę</Button>
+                <Button className="mb-2 mt-auto">
+                  <Link href="/oferta">Sprawdź ofertę</Link>
+                </Button>
               </div>
             </div>
           </Fade>
@@ -45,7 +44,11 @@ export default function OfferSection() {
           <Fade direction="bottom" delay={600} triggerOnce>
             <div className="mt-20 flex flex-wrap flex-row-reverse rounded-lg overflow-hidden">
               <div className="w-full lg:w-1/2 rounded-lg flex">
-                <img className="object-cover" src="/panel11.jpg" alt="" />
+                <img
+                  className="object-cover"
+                  src="/magazyn-kontenerowy-sm.jpg"
+                  alt=""
+                />
               </div>
               <div
                 className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-gray-50 shadow-md"
@@ -55,15 +58,18 @@ export default function OfferSection() {
                 }}
               >
                 <h3 className="my-4 text-secondaryGreen">
-                  Magazynowanie energii
+                  Magazynowanie energii i smart home
                 </h3>
                 <div className="w-10 h-1 rounded-sm bg-primaryGreen mb-4" />
                 <p className="mb-4 text-lg text-right">
-                  Osiągnij jeszcze większą niezależność dzięki połączeniu
-                  instalacji fotowoltaicznej z magazynem energii.
+                  Osiągnij jeszcze większą niezależność i efektywność dzięki
+                  połączeniu instalacji fotowoltaicznej z magazynem energii oraz
+                  systemem smart home.
                 </p>
 
-                <Button className="mb-2 mt-auto">Sprawdź ofertę</Button>
+                <Button className="mb-2 mt-auto">
+                  <Link href="/oferta">Sprawdź ofertę</Link>
+                </Button>
               </div>
             </div>
           </Fade>
@@ -71,7 +77,7 @@ export default function OfferSection() {
           <Fade direction="bottom" delay={600} triggerOnce>
             <div className="mt-20 flex flex-wrap rounded-lg overflow-hidden">
               <div className="w-full lg:w-1/2 rounded-lg flex">
-                <img className="object-cover" src="/glp_slider30.jpg" alt="" />
+                <img className="object-cover" src="/monter_sm.jpg" alt="" />
               </div>
               <div
                 className="relative flex flex-col items-start w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-secondaryGreen shadow-md"
@@ -83,11 +89,13 @@ export default function OfferSection() {
                 <div className="w-10 h-1 rounded-sm bg-white mb-4" />
                 <p className="mb-4 text-lg text-white">
                   Twój wykonawca nie jest w stanie wykonać przeglądu lub
-                  naprawić niewłaściwie działającej instalacji pv? Zgłoś się do
+                  naprawić niewłaściwie działającej instalacji PV? Zgłoś się do
                   nas!
                 </p>
 
-                <Button className="mb-2 mt-auto ml-auto">Sprawdź ofertę</Button>
+                <Button className="mb-2 mt-auto">
+                  <Link href="/oferta">Sprawdź ofertę</Link>
+                </Button>
               </div>
             </div>
           </Fade>

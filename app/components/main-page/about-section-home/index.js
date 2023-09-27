@@ -34,7 +34,7 @@ export default function AboutSectionHome() {
         <div className="container mx-auto px-4">
           <Fade direction="bottom" delay={300} triggerOnce>
             <div className="max-w-6xl p-4 flex flex-wrap justify-center items-center">
-              <div className="mb-6 w-full lg:w-1/3 text-center">
+              {/* <div className="mb-6 w-full lg:w-1/3 text-center">
                 <img
                   className="mb-6 mx-auto w-32 h-32 rounded-full object-cover"
                   src="/profile.jpg"
@@ -42,7 +42,7 @@ export default function AboutSectionHome() {
                 />
                 <h4 className="text-xl">Artur Brosch</h4>
                 <p className="text-primaryGreen">Prezes Green Leaf Power</p>
-              </div>
+              </div> */}
               <div className="w-full lg:w-2/3">
                 <svg
                   className="mb-4 text-primaryGreen h-10"
@@ -59,7 +59,7 @@ export default function AboutSectionHome() {
                     fill="currentColor"
                   ></path>
                 </svg>
-                <h3 className="mb-6 leading-relaxed">
+                <h3 className="mb-6 leading-relaxed text-center">
                   Nie jesteśmy największą firmą w branży, nie mamy długiej
                   historii, ale{" "}
                   <span className="text-primaryGreen">
@@ -96,7 +96,7 @@ export default function AboutSectionHome() {
         </svg>
       </div> */}
       <Link href="/o-nas">
-        <Button>Sprawdź dowody</Button>
+        <Button>Poznaj nas</Button>
       </Link>
     </section>
   );
