@@ -3,6 +3,7 @@ import Button from "@/app/components/global-components/button";
 import ListItem from "@/app/components/global-components/list-item";
 import PageHeader from "@/app/components/global-components/page-header";
 import SectionTitle from "@/app/components/global-components/section-title";
+import Link from "next/link";
 import { Fade, Slide } from "react-awesome-reveal";
 
 export default function OfertaDlaDomu() {
