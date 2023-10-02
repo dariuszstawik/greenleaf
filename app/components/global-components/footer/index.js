@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
                 <h5 className="mb-4 font-bold">Biuro</h5>
-                <p className="leading-loose my-0">ul. 11 Listoada 11</p>
+                <p className="leading-loose my-0">ul. 11 Listopada 11</p>
                 <p className="leading-loose my-0">40-387 Katowice</p>
               </div>
               <div className="mb-6 w-full md:w-1/2 lg:w-1/4 px-3">

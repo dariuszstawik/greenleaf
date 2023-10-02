@@ -12,7 +12,7 @@ export default function Partnerzy() {
           <div className="w-1/2">
             <h4>MP Solar Group</h4>
             <ul>
-              wyłączny przedstawiciel na Polskę marek:
+              wyłączny przedstawiciel na Polskę produktów:
               <ListItem className="border-b-0 pb-1 px-0">
                 Growatt: inwertery, magazyny energii
               </ListItem>
