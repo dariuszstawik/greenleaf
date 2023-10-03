@@ -1,5 +1,7 @@
+import { client } from "@/lib/contentful/client";
 import ListItem from "../list-item";
 import Logo from "../logo";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -60,6 +62,11 @@ export default function Footer() {
             <p className="text-sm mx-auto text-center mb-2">
               © 2023. Green Leaf Power. All rights reserved.
             </p>
+
+            <p className="text-sm mx-auto text-center mb-2">
+              <Link href="/polityka-prywatnosci">polityka prywatności</Link>
+            </p>
+
             <p className="text-sm mx-auto text-center">
               Created by{" "}
               <a
