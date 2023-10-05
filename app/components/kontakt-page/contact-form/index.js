@@ -3,51 +3,47 @@
 import Button from "../../global-components/button";
 import SectionTitle from "../../global-components/section-title";
 
-// import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-const ContactForm = ({ about1 }) => {
-  //   const form = useRef(null);
-  //   console.log("about1 contact form " + about1);
+const ContactForm = () => {
+  const form = useRef(null);
 
-  //   console.log(about1);
+  const [showNotification, setShowNotification] = useState(false);
 
-  //   const [showNotification, setShowNotification] = useState(false);
+  useEffect(() => {
+    if (showNotification) {
+      const timer = setTimeout(() => {
+        setShowNotification(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showNotification]);
 
-  //   useEffect(() => {
-  //     if (showNotification) {
-  //       const timer = setTimeout(() => {
-  //         setShowNotification(false);
-  //       }, 3000);
-  //       return () => clearTimeout(timer);
-  //     }
-  //   }, [showNotification]);
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userName: e.target.userName.value,
+        phone: e.target.phone.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
+    });
 
-  //   const sendEmail = async (e) => {
-  //     e.preventDefault();
-  //     const response = await fetch("/api/send", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         firstName: e.target.firstName.value,
-  //         lastName: e.target.lastName.value,
-  //         phone: e.target.phone.value,
-  //         email: e.target.email.value,
-  //         message: e.target.message.value,
-  //       }),
-  //     });
+    console.log("To jest response.body" + response.body);
 
-  //     console.log("To jest response.body" + response.body);
+    if (response.status === 200) {
+      setShowNotification(true);
+    } else {
+      console.log("Email not sent");
+    }
 
-  //     if (response.status === 200) {
-  //       setShowNotification(true);
-  //     } else {
-  //       console.log("Email not sent");
-  //     }
-
-  //     e.target && e.target.reset();
-  //   };
+    e.target && e.target.reset();
+  };
 
   return (
     <section
@@ -70,8 +66,8 @@ const ContactForm = ({ about1 }) => {
           Imię i nazwisko
         </label>
         <input
-          id="usersName"
-          name="usersName"
+          id="userName"
+          name="userName"
           type="text"
           required
           className="relative border border-primaryGreen rounded-xl leading-8 px-4"
