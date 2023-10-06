@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Button from "../../global-components/button";
 import SectionTitle from "../../global-components/section-title";
 
@@ -50,9 +51,6 @@ const ContactForm = () => {
       className="container pt-[112px] flex flex-col gap-2 relative"
       id="contactSection"
     >
-      {/* <h2 className="inline-block text-4xl font-bold text-center uppercase border-b-2 border-primaryGreen mx-auto mb-12">
-        Contact me
-      </h2> */}
       <SectionTitle>Wyślij wiadomość</SectionTitle>
       <form
         // ref={form}
@@ -72,20 +70,6 @@ const ContactForm = () => {
           required
           className="relative border border-primaryGreen rounded-xl leading-8 px-4"
         ></input>
-
-        {/* <label
-          htmlFor="lastName"
-          className="inline-block  mr-auto relative uppercase after:content-['*'] after:text-primaryGreen after:absolute after:-right-[10px] after:-top-[2px]"
-        >
-          Nazwisko
-        </label>
-        <input
-          id="lastName"
-          name="lastName"
-          type="text"
-          required
-          className="border border-primaryGreen rounded-xl leading-8 px-4"
-        ></input> */}
 
         <label
           htmlFor="email"
@@ -126,14 +110,36 @@ const ContactForm = () => {
           className="border border-primaryGreen rounded-xl leading-8 px-4"
         ></textarea>
 
+        <div className="flex justify-start items-start mt-6 mb-2">
+          <input
+            type="checkbox"
+            id="privacyTermsCheckbox"
+            required
+            className="mr-2"
+          />
+          <label
+            htmlFor="privacyTermsCheckbox"
+            className="-translate-y-2 relative before:content-['*'] before:text-smartOrange before:mr-2"
+          >
+            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+            otrzymania odpowiedzi na przesłane zapytanie. Administatorem danych
+            osobowych jest Green leaf Power. Szczegółowe informacje znajdują się
+            w{" "}
+            <Link href="/polityka-prywatnosci" className="text-primaryGreen">
+              Polityce Prywatności
+            </Link>
+            .
+          </label>
+        </div>
+
         <Button isOrange type="submit" className="ml-auto px-8 mt-4">
           Wyślij
         </Button>
-        {/* {showNotification && (
+        {showNotification && (
           <div className="text-primaryGreen text-2xl p-2 rounded absolute bottom-0 left-0">
             Wiadomość wysłana. Dziękujemy!
           </div>
-        )} */}
+        )}
       </form>
     </section>
   );
