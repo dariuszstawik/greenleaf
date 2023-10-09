@@ -3,6 +3,19 @@ import SingleArticle from "@/app/components/global-components/single-article";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
+export const getStaticPaths = async () => {
+  const res = await client.getEntries({ content_type: "aktualnosci" });
+
+  const paths = res.items.map((item) => {
+    return { params: { slug: item.fields.slug ? item.fields.slug : "" } };
+  });
+
+  return {
+    paths,
+    fallback: true,
+  };
+};
+
 async function getContentfulNewsPosts(slug) {
   const resNewsPosts = await client.getEntries(
     { content_type: "aktualnosci", "fields.slug": slug },
