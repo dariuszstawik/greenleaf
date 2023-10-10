@@ -53,8 +53,8 @@ const ContactForm = () => {
     >
       <SectionTitle>Wyślij wiadomość</SectionTitle>
       <form
-        // ref={form}
-        // onSubmit={sendEmail}
+        ref={form}
+        onSubmit={sendEmail}
         className="relative w-1/2 mx-auto flex flex-col gap-2"
       >
         <label

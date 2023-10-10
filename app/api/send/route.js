@@ -7,10 +7,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, message } = body;
+    const { userName, email, phone, message } = body;
     const data = await resend.emails.send({
-      from: "Dariusz <dariusz@stronyjaksiepatrzy.pl>",
-      to: ["dariusz.stawik@gmail.com"],
+      from: "GreenLeaf <greelneaf@stronyjaksiepatrzy.online>",
+      to: ["biuro@greenleaf.pl"],
       subject: "Wiadomość z formularza",
       react: EmailTemplate({
         userName,
