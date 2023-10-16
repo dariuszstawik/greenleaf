@@ -14,7 +14,6 @@ async function getContentfulLogos() {
 
 export default async function Logos() {
   const logos = await getContentfulLogos();
-  console.log(logos[0].fields.logo);
 
   return (
     <section>
