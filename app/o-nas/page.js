@@ -1,4 +1,3 @@
-// "use client";
 import { Slide } from "react-awesome-reveal";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";

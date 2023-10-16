@@ -3,11 +3,13 @@ import { Fade } from "react-awesome-reveal";
 import Button from "../../global-components/button";
 import SectionTitle from "../../global-components/section-title";
 import Link from "next/link";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-export default function AboutSectionHome() {
+export default function AboutSectionHome(content) {
+  console.log(content.content[0].fields.title);
   return (
     <section className="relative flex flex-col justify-center items-center">
-      <SectionTitle>Dlaczego my?</SectionTitle>
+      <SectionTitle>{content.content[0].fields.title}</SectionTitle>
 
       <div className="py-10">
         <div className="container mx-auto px-4">
@@ -29,13 +31,14 @@ export default function AboutSectionHome() {
                     fill="currentColor"
                   ></path>
                 </svg>
-                <h3 className="mb-6 leading-relaxed text-center">
-                  Nie jesteśmy największą firmą w branży, nie mamy długiej
+                <span className="mb-6 leading-relaxed text-center boldIsGreen">
+                  {/* Nie jesteśmy największą firmą w branży, nie mamy długiej
                   historii, ale{" "}
                   <span className="text-primaryGreen">
                     bardziej się staramy.
-                  </span>
-                </h3>
+                  </span> */}
+                  {documentToReactComponents(content.content[0].fields.content)}
+                </span>
               </div>
             </div>
           </Fade>
@@ -43,7 +46,7 @@ export default function AboutSectionHome() {
       </div>
 
       <Link href="/o-nas">
-        <Button>Poznaj nas</Button>
+        <Button>{content.content[0].fields.buttonTitle}</Button>
       </Link>
     </section>
   );

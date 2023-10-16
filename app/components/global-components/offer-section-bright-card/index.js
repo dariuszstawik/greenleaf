@@ -5,7 +5,11 @@ export default function OfferSectionBrightCard({ title, link, img, children }) {
   return (
     <div className="mt-20 flex flex-wrap flex-row-reverse rounded-lg overflow-hidden">
       <div className="w-full lg:w-1/2 rounded-lg flex">
-        <img className="object-cover" src={img} alt="" />
+        <img
+          className="object-cover"
+          src={img ? img.fields.file.url : ""}
+          alt={img ? img.fields.description : ""}
+        />
       </div>
       <div
         className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-gray-50 shadow-md"

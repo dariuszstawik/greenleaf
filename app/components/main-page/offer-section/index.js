@@ -4,7 +4,7 @@ import SectionTitle from "../../global-components/section-title";
 import OfferSectionDarkCard from "../../global-components/offer-section-dark-card";
 import OfferSectionBrightCard from "../../global-components/offer-section-bright-card";
 
-export default function OfferSection() {
+export default function OfferSection({ content }) {
   return (
     <section className="bg-primaryGray mt-32 pb-32">
       <div>
@@ -15,40 +15,39 @@ export default function OfferSection() {
             </Fade>
           </div>
 
-          <Fade direction="bottom" delay={600} triggerOnce>
-            <OfferSectionDarkCard
-              title="Fotowoltaika"
-              link="/oferta"
-              img="/panel11.jpg"
-            >
-              Dla firm, gospodarstw rolnych, a także klientów indywidualnych.
-              Poznaj naszą ofertę i dowiedz się, ile zyskasz dzięki energii
-              słonecznej od Green Leaf Power.
-            </OfferSectionDarkCard>
-          </Fade>
-
-          <Fade direction="bottom" delay={600} triggerOnce>
-            <OfferSectionBrightCard
-              title="Magazynowanie energii i smart home"
-              link="/oferta"
-              img="/magazyn-kontenerowy-sm.jpg"
-            >
-              Osiągnij jeszcze większą niezależność i efektywność dzięki
-              połączeniu instalacji fotowoltaicznej z magazynem energii oraz
-              systemem smart home.
-            </OfferSectionBrightCard>
-          </Fade>
-
-          <Fade direction="bottom" delay={600} triggerOnce>
-            <OfferSectionDarkCard
-              title="Usługi serwisowe"
-              link="/oferta"
-              img="/monter_sm.jpg"
-            >
-              Twój wykonawca nie jest w stanie wykonać przeglądu lub naprawić
-              niewłaściwie działającej instalacji PV? Zgłoś się do nas!
-            </OfferSectionDarkCard>
-          </Fade>
+          {content.map((item, i) => {
+            return (
+              <Fade direction="bottom" delay={i * 100} triggerOnce key={i}>
+                {i % 2 !== 0 ? (
+                  <OfferSectionBrightCard
+                    title={item.fields.title}
+                    buttonTitle={item.fields.buttonTitle}
+                    link="/oferta"
+                    img={item.fields.image ? item.fields.image : ""}
+                  >
+                    {item.fields.content}
+                  </OfferSectionBrightCard>
+                ) : (
+                  <OfferSectionDarkCard
+                    title={item.fields.title}
+                    buttonTitle={item.fields.buttonTitle}
+                    link="/oferta"
+                    img={item.fields.image ? item.fields.image : ""}
+                  >
+                    {item.fields.content}
+                  </OfferSectionDarkCard>
+                )}
+                {/* <OfferSectionDarkCard
+                  title={item.fields.title}
+                  buttonTitle={item.fields.buttonTitle}
+                  link="/oferta"
+                  img={item.fields.obraz ? item.fields.obraz : ""}
+                >
+                  {item.fields.content}
+                </OfferSectionDarkCard> */}
+              </Fade>
+            );
+          })}
         </div>
       </div>
     </section>
