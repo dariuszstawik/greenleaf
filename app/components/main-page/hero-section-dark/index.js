@@ -33,14 +33,12 @@ export default async function HeroSectionDark() {
           alt="asset"
         />
         <div>
-          {/* <p className="text-white text-lg px-16 mb-4">Green Leaf Power</p> */}
           <h1 className="px-16 text-white">
             Green Leaf <span className="block mt-4"> Power </span>
           </h1>
         </div>
         <div className="w-28 h-1 ml-16 rounded-sm bg-primaryGreen" />
         <p className="mx-16 text-lg text-white text-left ">
-          {/* {horsesForSaleHeader.fields.headerContent} */}
           Instalacje fotowoltaiczne, magazyny energii, systemy smart home, a
           także serwisy fotowoltaiki dla klientów biznesowych oraz
           indywidualnych.

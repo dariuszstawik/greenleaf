@@ -7,42 +7,12 @@ import Link from "next/link";
 export default function AboutSectionHome() {
   return (
     <section className="relative flex flex-col justify-center items-center">
-      {/* <img
-        src="asset3.svg"
-        className="absolute w-1/6 bottom-0 right-0 translate-x-2 bg-primaryGray"
-      /> */}
       <SectionTitle>Dlaczego my?</SectionTitle>
-      {/* <div className="skew skew-top mr-for-radius"> */}
-      {/* <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
-        </svg> */}
-      {/* </div> */}
-      {/* <div className="skew skew-top ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
-        </svg>
-      </div> */}
+
       <div className="py-10">
         <div className="container mx-auto px-4">
           <Fade direction="bottom" delay={300} triggerOnce>
             <div className="max-w-6xl p-4 flex flex-wrap justify-center items-center">
-              {/* <div className="mb-6 w-full lg:w-1/3 text-center">
-                <img
-                  className="mb-6 mx-auto w-32 h-32 rounded-full object-cover"
-                  src="/profile.jpg"
-                  alt=""
-                />
-                <h4 className="text-xl">Artur Brosch</h4>
-                <p className="text-primaryGreen">Prezes Green Leaf Power</p>
-              </div> */}
               <div className="w-full lg:w-2/3">
                 <svg
                   className="mb-4 text-primaryGreen h-10"
@@ -66,35 +36,12 @@ export default function AboutSectionHome() {
                     bardziej się staramy.
                   </span>
                 </h3>
-                {/* <div>
-                <button className="mr-1 bg-gray-200 rounded-full p-1"></button>
-                <button className="mr-1 bg-gray-200 rounded-full p-1"></button>
-                <button className="mr-1 bg-green-600 rounded-full p-1"></button>
-                <button className="bg-gray-200 rounded-full p-1"></button>
-              </div> */}
               </div>
             </div>
           </Fade>
         </div>
       </div>
-      {/* <div className="skew skew-bottom mr-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
-        </svg>
-      </div>
-      <div className="skew skew-bottom ml-for-radius">
-        <svg
-          className="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
-        </svg>
-      </div> */}
+
       <Link href="/o-nas">
         <Button>Poznaj nas</Button>
       </Link>
