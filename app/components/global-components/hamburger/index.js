@@ -1,5 +1,3 @@
-import React, { useContext } from "react";
-
 const Hamburger = ({ hasCloseIcon, toggleMobileMenu }) => {
   return (
     <>
