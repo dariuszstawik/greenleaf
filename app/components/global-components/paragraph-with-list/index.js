@@ -18,12 +18,17 @@ export default function ParagraphWithlist({
   buttonTitle,
   buttonLink,
   img,
+  isImgSmaller,
 }) {
   return (
     <>
       <div className={`w-full pb-16 flex flex-col lg:flex-row-reverse`}>
         <Slide direction="right" triggerOnce>
-          <div className="relative w-[700px] rounded-md after:content-[''] after:absolute after-rounded-md after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-10">
+          <div
+            className={`relative ${
+              isImgSmaller ? "w-[560px]" : "w-[700px]"
+            } rounded-md after:content-[''] after:absolute after-rounded-md after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-10`}
+          >
             <img
               src={img ? img.fields.file.url : ""}
               alt={
@@ -46,11 +51,14 @@ export default function ParagraphWithlist({
               <ListItem>{listItem2}</ListItem>
               <ListItem>{listItem3} </ListItem>
               <ListItem>{listItem4}</ListItem>
-              <ListItem isLast>{listItem5}.</ListItem>
+              <ListItem isLast>{listItem5}</ListItem>
             </ul>
-            <Button>
-              <Link href={buttonLink}> {buttonTitle}</Link>
-            </Button>
+
+            {buttonTitle && buttonLink && (
+              <Button>
+                <Link href={buttonLink}> {buttonTitle}</Link>
+              </Button>
+            )}
           </Fade>
         </div>
       </div>

@@ -10,11 +10,16 @@ export default function ParagraphWithImageOnLeft({
   img,
   buttonTitle,
   buttonHref,
+  isImaSmaller,
 }) {
   return (
     <div className={`w-full py-16 flex flex-col lg:flex-row`}>
       <Slide direction="left" delay={600} triggerOnce>
-        <div className="relative w-[700px] shrink-0 rounded-md after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-20">
+        <div
+          className={`relative ${
+            isImaSmaller ? "w-[560]" : "w-[700px]"
+          } shrink-0 rounded-md after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-20`}
+        >
           <img
             src={img.fields.file.url ? img.fields.file.url : ""}
             alt={img.fields.file.description ? img.fields.file.description : ""}
