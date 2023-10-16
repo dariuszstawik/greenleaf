@@ -1,11 +1,22 @@
+"use client";
 import Link from "next/link";
 import Button from "../button";
 
-export default function OfferSectionGrayCard({ title, link, img, children }) {
+export default function OfferSectionGrayCard({
+  title,
+  buttonTitle,
+  link,
+  img,
+  children,
+}) {
   return (
     <div className="mt-20 flex flex-wrap flex-row-reverse rounded-lg overflow-hidden">
       <div className="w-full lg:w-1/2 rounded-lg flex">
-        <img className="object-cover" src={img} alt="" />
+        <img
+          className="object-cover"
+          src={img ? img.fields.file.url : ""}
+          alt={img ? img.fields.description : ""}
+        />
       </div>
       <div
         className="relative flex flex-col items-end w-full lg:w-1/2 py-6 lg:pt-10 px-10 rounded-r bg-primaryGray shadow-md"
@@ -17,8 +28,8 @@ export default function OfferSectionGrayCard({ title, link, img, children }) {
         <div className="w-10 h-1 rounded-sm bg-primaryGreen mb-4" />
         <p className="mb-4 text-lg text-right">{children}</p>
 
-        <Button className="mb-2 mt-auto ml-auto">
-          <Link href={link}>Sprawdź ofertę</Link>
+        <Button className="mb-2 mt-auto">
+          <Link href={link}>{buttonTitle}</Link>
         </Button>
       </div>
     </div>

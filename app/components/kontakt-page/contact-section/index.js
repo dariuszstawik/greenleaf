@@ -6,7 +6,13 @@ import PhoneIcon from "../phone-icon";
 import EmailIcon from "../email-icon";
 import { Slide } from "react-awesome-reveal";
 
-export default function ContactSection() {
+export default function ContactSection({
+  title,
+  address,
+  phoneNumber,
+  email,
+  content,
+}) {
   return (
     <section className="flex flex-col xl:flex-row-reverse">
       <Slide direction="right" delay={300} triggerOnce>
@@ -24,22 +30,20 @@ export default function ContactSection() {
       </Slide>
 
       <div className="ml-16 mr-16">
-        <SectionTitle isAlignedLeft>Kontakt</SectionTitle>
+        <SectionTitle isAlignedLeft>{title}</SectionTitle>
         <div className="flex flex-col gap-4 my-6">
-          <p className="mb-2">
-            Biuro firmy znajduje się w Katowicach. Zapraszamy do kontaktu!
-          </p>
+          <p className="mb-2">{content}</p>
           <p className="my-0">
             <AddressIcon />
-            ul. 11 Listopada 11, 40-387 Katowice
+            {address}
           </p>
           <p className="my-0">
             <PhoneIcon />
-            536 108 864
+            {phoneNumber}
           </p>
           <p className="my-0">
             <EmailIcon />
-            biuro@greenleafpower.pl
+            {email}
           </p>
           <div className="flex mt-2">
             <a href="https://www.facebook.com/GreenLeafPowerPL">

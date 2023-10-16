@@ -1,11 +1,39 @@
-"use client";
+// "use client";
 import { Fade } from "react-awesome-reveal";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import OfferSectionDarkCard from "../components/global-components/offer-section-dark-card";
 import OfferSectionGrayCard from "../components/global-components/offer-section-gray-card";
+import { client } from "@/lib/contentful/client";
 
-export default function Oferta() {
+async function getContentfulBusinessOffer() {
+  const resContentfulOffer = await client.getEntries({
+    content_type: "dlaBiznesuWyroznione",
+  });
+  return resContentfulOffer.items[0];
+}
+
+async function getContentfulHomeOffer() {
+  const resContentfulOffer = await client.getEntries({
+    content_type: "dlaDomuWyroznione",
+  });
+  return resContentfulOffer.items[0];
+}
+
+async function getContentfulServiceOffer() {
+  const resContentfulOffer = await client.getEntries({
+    content_type: "naprawaISerwisWyroznione",
+  });
+  return resContentfulOffer.items[0];
+}
+
+export default async function Oferta() {
+  const businessOffer = await getContentfulBusinessOffer();
+  const homeOffer = await getContentfulHomeOffer();
+  const serviceOffer = await getContentfulServiceOffer();
+
+  console.log(businessOffer.fields.title);
+
   return (
     <>
       <PageHeader>Oferta</PageHeader>
@@ -13,36 +41,37 @@ export default function Oferta() {
         <div>
           <div className="container mx-auto px-4">
             <div className="mb-16 flex flex-col justify-center items-center">
-              <Fade direction="bottom" triggerOnce>
-                <SectionTitle>Nasza oferta</SectionTitle>
-              </Fade>
+              <SectionTitle>Nasza oferta</SectionTitle>
             </div>
 
-            <Fade direction="bottom" delay={600} triggerOnce>
-              <OfferSectionDarkCard
-                title="Rozwiązania dla biznesu"
-                link="/oferta/dla-biznesu"
-                img="/mag_energii_sm1.jpg"
-              >
-                Zapewniamy obsługę całego procesu inwestycyjnego. Dostarczamy
-                kompleksowe rozwiązania z zakresu fotowoltaiki w połączeniu z
-                magazynowaniem energii.
-              </OfferSectionDarkCard>
-            </Fade>
+            <OfferSectionDarkCard
+              title={businessOffer.fields.title}
+              link={businessOffer.fields.buttonLink}
+              buttonTitle={businessOffer.fields.buttonTitle}
+              img={businessOffer.fields.image ? businessOffer.fields.image : ""}
+            >
+              {businessOffer.fields.content}
+            </OfferSectionDarkCard>
 
-            <Fade direction="bottom" delay={600} triggerOnce>
-              <OfferSectionGrayCard
-                title="Rozwiązania dla domu"
-                link="/oferta/dla-domu"
-                img="/glp_slider20.jpg"
-              >
-                Dostarczamy kompleksowe rozwiązania z zakresu fotowoltaiki,
-                magazynowania energii, ładowania samochodów elektrycznych, jak
-                również z zakresu inteligentnych systemów zarządzania energią
-              </OfferSectionGrayCard>
-            </Fade>
+            <OfferSectionGrayCard
+              title={homeOffer.fields.title}
+              link={homeOffer.fields.buttonLink}
+              buttonTitle={homeOffer.fields.buttonTitle}
+              img={homeOffer.fields.image ? homeOffer.fields.image : ""}
+            >
+              {homeOffer.fields.content}
+            </OfferSectionGrayCard>
 
-            <Fade direction="bottom" delay={600} triggerOnce>
+            <OfferSectionDarkCard
+              title={serviceOffer.fields.title}
+              link={serviceOffer.fields.buttonLink}
+              buttonTitle={serviceOffer.fields.buttonTitle}
+              img={serviceOffer.fields.image ? serviceOffer.fields.image : ""}
+            >
+              {serviceOffer.fields.content}
+            </OfferSectionDarkCard>
+
+            {/* <Fade direction="bottom" delay={600} triggerOnce>
               <OfferSectionDarkCard
                 title="Naprawa i serwis 'obcych' instalacji PV"
                 link="/oferta/uslugi-serwisowe"
@@ -52,7 +81,7 @@ export default function Oferta() {
                 nie jest zainteresowany jej naprawą lub nie działa już na rynku,
                 możesz zwróć się do nas.
               </OfferSectionDarkCard>
-            </Fade>
+            </Fade> */}
           </div>
         </div>
       </section>
