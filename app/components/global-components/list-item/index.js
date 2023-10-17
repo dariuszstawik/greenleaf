@@ -4,7 +4,6 @@ import { Fade } from "react-awesome-reveal";
 
 export default function ListItem({ children, isLast, className, isNested }) {
   return (
-    // <Fade triggerOnce>
     <div className={`flex py-4 ${!isLast && "border-b"} ${className}`}>
       {isNested ? (
         <svg
@@ -43,6 +42,5 @@ export default function ListItem({ children, isLast, className, isNested }) {
       )}
       <p className="my-0">{children}</p>
     </div>
-    // </Fade>
   );
 }

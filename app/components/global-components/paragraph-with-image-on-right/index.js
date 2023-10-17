@@ -28,9 +28,12 @@ export default function ParagraphWithImageOnRight({
       <div className="ml-16 mr-16 lg:ml-28 lg:mr-32 flex flex-col gap-2 text-lg">
         <SectionTitle isAlignedLeft>{title}</SectionTitle>
         {children}
-        <Button className="mr-auto mt-6">
-          <Link href={buttonHref}>{buttonTitle}</Link>
-        </Button>
+
+        {buttonTitle && buttonHref && (
+          <Button className="mr-auto mt-6">
+            <Link href={buttonHref}>{buttonTitle}</Link>
+          </Button>
+        )}
       </div>
     </div>
   );
