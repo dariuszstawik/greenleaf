@@ -40,3 +40,7 @@ p {
 .boldIsGreen b {
   @apply text-primaryGreen font-normal;
 }
+
+/* .areListItemsGreen ul{
+  @apply list-image-[url()]
+} */

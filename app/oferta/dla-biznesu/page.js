@@ -62,6 +62,7 @@ export default async function OfertaDlaBiznesu() {
           return (
             <ParagraphWithListAndSubitems
               key={i}
+              isImgSmaller
               title={item.fields.title}
               paragraph={item.fields.content}
               listItem1={item.fields.list1}
