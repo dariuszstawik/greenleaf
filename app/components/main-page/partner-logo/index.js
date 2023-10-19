@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function PartnerLogo({ logo, logoLink }) {
   return (
     <div className="w-1/2 md:w-1/3 lg:w-1/5 px-4 mb-8 lg:mb-0">

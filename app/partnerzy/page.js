@@ -1,5 +1,4 @@
 import { client } from "@/lib/contentful/client";
-import ListItem from "../components/global-components/list-item";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import Partneritem from "../components/partnerzy-page/partner-item";

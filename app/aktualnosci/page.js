@@ -43,10 +43,6 @@ export default async function Aktualnosci() {
     <>
       <PageHeader>Aktualności</PageHeader>
       <section className="container mx-auto">
-        {/* <div className="min-w-96 max-w-[800px] mx-auto mb-6 flex flex-col items-center">
-        <SectionTitle>Aktualności</SectionTitle>
-      </div> */}
-
         <ul className="grid grid-cols-1 gap-16 xl:grid-cols-3 mx-auto px-10">
           {newsList(9)}
         </ul>

@@ -1,9 +1,5 @@
-import { Slide } from "react-awesome-reveal";
 import PageHeader from "../components/global-components/page-header";
-import SectionTitle from "../components/global-components/section-title";
 import Features from "../components/o-nas-page/features";
-import Button from "../components/global-components/button";
-import Link from "next/link";
 import ParagraphWithImageOnRight from "../components/global-components/paragraph-with-image-on-right";
 import ParagraphWithImageOnLeft from "../components/global-components/paragraph-with-image-on-left";
 import { client } from "@/lib/contentful/client";
@@ -68,61 +64,7 @@ export default async function oNas() {
         );
       })}
 
-      {/* <ParagraphWithImageOnRight
-        title="Kim jesteśmy?"
-        img="/realization12.jpg"
-        buttonTitle="Sprawdź ofertę"
-        buttonHref="/oferta"
-      >
-        <p className="my-0">
-          Green Leaf Power to firma, która narodziła się z pasji doświadczonych
-          inwestorów i menedżerów.
-        </p>
-        <p className="my-0">
-          Zajmujemy się <span> </span>
-          <span className=" text-primaryGreen">
-            montażem oraz serwisowaniem instalacji fotowoltaicznych - zarówno
-            dla klientów indywidualnych, jak też biznesowych.
-          </span>
-        </p>
-        <p className="my-0">
-          Do współpracy zaprosiliśmy kompetentnych i doświadczonych
-          projektantów, koordynatorów prac oraz instalatorów.
-        </p>
-      </ParagraphWithImageOnRight> */}
-
       <Features content={featuresContent} />
-
-      {/* <ParagraphWithImageOnLeft
-        title="Możesz nam zaufać"
-        img="/hero-img2.jpg"
-        buttonTitle="Sprawdź ofertę"
-        buttonHref="/oferta"
-      >
-        <>
-          <p className="my-0">
-            W Green Leaf Power stawiamy nie tylko na skuteczność, ale również
-            trwałość.
-            <span className="text-primaryGreen">
-              Dlatego zbudowaliśmy zespół, któremu możesz zaufać na lata.
-            </span>
-            Nasza firma to ludzie, którzy tworzą ją od podstaw. Dbamy o naszych
-            pracowników i ich rodziny, ponieważ to oni stanowią fundament
-            naszego sukcesu. Oferujemy im stałe zatrudnienie i zapewniamy
-            możliwości rozwoju, ponieważ wierzymy, że tylko zespół pełen wiedzy
-            i zaangażowania może spełnić Twoje oczekiwania.
-          </p>
-          <p className="my-0">
-            Wyznajemy filozofię, iż
-            <span className="text-primaryGreen">
-              każdy klient jest naszym partnerem i ma swój udział w sukcesie
-              naszej firmy.
-            </span>
-            Tylko zadowolony klient jest dla nas gwarancją, że jesteśmy na
-            właściwej drodze.
-          </p>
-        </>
-      </ParagraphWithImageOnLeft> */}
 
       {ParagraphWithImageOnLeftContent.map((item, i) => {
         return (

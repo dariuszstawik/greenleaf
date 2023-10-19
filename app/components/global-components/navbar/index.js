@@ -5,12 +5,11 @@ import Link from "next/link";
 import navbarData from "./navbarData";
 import Button from "../button";
 import Hamburger from "../hamburger";
-// import { useRouter } from "next/router";
 import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
-  // const router = useRouter();
+
   const pathname = usePathname();
 
   const toggleMobileMenu = () => {

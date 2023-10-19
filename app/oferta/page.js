@@ -1,5 +1,3 @@
-// "use client";
-import { Fade } from "react-awesome-reveal";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import OfferSectionDarkCard from "../components/global-components/offer-section-dark-card";
@@ -31,8 +29,6 @@ export default async function Oferta() {
   const businessOffer = await getContentfulBusinessOffer();
   const homeOffer = await getContentfulHomeOffer();
   const serviceOffer = await getContentfulServiceOffer();
-
-  console.log(businessOffer.fields.title);
 
   return (
     <>
@@ -70,18 +66,6 @@ export default async function Oferta() {
             >
               {serviceOffer.fields.content}
             </OfferSectionDarkCard>
-
-            {/* <Fade direction="bottom" delay={600} triggerOnce>
-              <OfferSectionDarkCard
-                title="Naprawa i serwis 'obcych' instalacji PV"
-                link="/oferta/uslugi-serwisowe"
-                img="/monter_sm.jpg"
-              >
-                Jeżeli Twoja instalacja PV uległa awarii, a wykonawca instalacji
-                nie jest zainteresowany jej naprawą lub nie działa już na rynku,
-                możesz zwróć się do nas.
-              </OfferSectionDarkCard>
-            </Fade> */}
           </div>
         </div>
       </section>

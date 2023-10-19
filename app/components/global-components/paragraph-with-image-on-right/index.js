@@ -11,8 +11,6 @@ export default function ParagraphWithImageOnRight({
   buttonTitle,
   buttonHref,
 }) {
-  console.log(img);
-
   return (
     <div className={`w-full py-16 flex flex-col lg:flex-row-reverse`}>
       <Slide direction="right" triggerOnce>

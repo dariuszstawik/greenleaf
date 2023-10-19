@@ -26,16 +26,6 @@ export default function Partneritem({
             {list3 && (
               <ListItem className="border-b-0 pb-1 px-0">{list3}</ListItem>
             )}
-
-            {/* <ListItem className="border-b-0 pb-1 px-0">
-            Growatt: inwertery, magazyny energii
-          </ListItem>
-          <ListItem className="border-b-0 pb-1 px-0">
-            Atess: inwertery, ładowarki do samochodów
-          </ListItem>
-          <ListItem className="border-b-0 pb-1 px-0">
-            Hopergy: konstrukcje
-          </ListItem> */}
           </ul>
         </div>
         <div className="w-1/2 flex justify-center">
