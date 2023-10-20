@@ -1,10 +1,4 @@
-// "use client";
-import { Fade, Slide } from "react-awesome-reveal";
-import ListItem from "../components/global-components/list-item";
 import PageHeader from "../components/global-components/page-header";
-import SectionTitle from "../components/global-components/section-title";
-import Button from "../components/global-components/button";
-import Link from "next/link";
 import ParagraphWithlist from "../components/global-components/paragraph-with-list";
 import { client } from "@/lib/contentful/client";
 
@@ -22,6 +16,13 @@ export default async function SerwisIGwarancje() {
   const ServiceAndGuarantee = await getContentfulServiceAndGuarantee();
   return (
     <>
+      <Head>
+        <title>Serwis i gwarancje: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: Serwis i gwarancje. Instalacje fotowoltaiczne dla biznesu i dla domu."
+        />
+      </Head>
       <PageHeader>Serwis i gwarancje</PageHeader>
       <section>
         <ParagraphWithlist
@@ -36,32 +37,6 @@ export default async function SerwisIGwarancje() {
           buttonLink={ServiceAndGuarantee.fields.buttonLink}
           img={ServiceAndGuarantee.fields.image}
         />
-
-        {/* <div className="ml-8 mr-16 lg:ml-8 lg:mr-28 flex flex-col gap-2 text-lg">
-            <Fade triggerOnce>
-              <SectionTitle isAlignedLeft>Serwis i gwarancje</SectionTitle>
-            </Fade>
-            <Fade triggerOnce>
-              <p>
-                {" "}
-                Oferujemy pięcioletnią letnią gwarancje prawidłowego działania
-                instalacji PV, w tym:
-              </p>
-            </Fade>
-            <Fade cascade triggerOnce>
-              <ul className="mb-4">
-                <ListItem>roczny przegląd instalacji,</ListItem>
-                <ListItem>czas reakcji na zgłoszenie awarii: 24h,</ListItem>
-                <ListItem>czas usunięcia awarii: 72h,</ListItem>
-                <ListItem>falownik zastępczy na czas jego naprawy,</ListItem>
-                <ListItem isLast>możliwość przedłużenia gwarancji.</ListItem>
-              </ul>
-              <Button>
-                <Link href="/kontakt"> Zapytaj o szczegóły</Link>
-              </Button>
-            </Fade>
-          </div> */}
-        {/* </div> */}
       </section>
     </>
   );

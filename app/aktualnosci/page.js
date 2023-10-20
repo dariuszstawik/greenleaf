@@ -1,5 +1,4 @@
 import { client } from "@/lib/contentful/client";
-import SectionTitle from "../components/global-components/section-title";
 import NewsCard from "../components/global-components/news-card";
 import PageHeader from "../components/global-components/page-header";
 
@@ -41,12 +40,15 @@ export default async function Aktualnosci() {
 
   return (
     <>
+      <Head>
+        <title>Aktualności: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: aktualności. Fotowoltaika, magazyny energii, systemy smart home, serwisy fotowoltaiki dla klientów biznesowych oraz indywidualnych."
+        />
+      </Head>
       <PageHeader>Aktualności</PageHeader>
       <section className="container mx-auto">
-        {/* <div className="min-w-96 max-w-[800px] mx-auto mb-6 flex flex-col items-center">
-        <SectionTitle>Aktualności</SectionTitle>
-      </div> */}
-
         <ul className="grid grid-cols-1 gap-16 xl:grid-cols-3 mx-auto px-10">
           {newsList(9)}
         </ul>

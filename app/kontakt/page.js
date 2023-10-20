@@ -17,6 +17,13 @@ export default async function Kontakt() {
   const contactContent = await getContentfulContactPage();
   return (
     <>
+      <Head>
+        <title>Kontakt: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: kontakt. Fotowoltaika, magazyny energii, systemy smart home, serwisy fotowoltaiki dla klientów biznesowych oraz indywidualnych."
+        />
+      </Head>
       <PageHeader>Kontakt</PageHeader>
       <ContactSection
         title={contactContent.fields.title}

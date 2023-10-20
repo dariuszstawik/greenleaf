@@ -1,10 +1,9 @@
-// "use client";
-import { Fade } from "react-awesome-reveal";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import OfferSectionDarkCard from "../components/global-components/offer-section-dark-card";
 import OfferSectionGrayCard from "../components/global-components/offer-section-gray-card";
 import { client } from "@/lib/contentful/client";
+import Head from "next/head";
 
 async function getContentfulBusinessOffer() {
   const resContentfulOffer = await client.getEntries({
@@ -36,6 +35,14 @@ export default async function Oferta() {
 
   return (
     <>
+      <Head>
+        <title>Oferta: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: rozwiązania z zakresu odnawialnych źródeł energii dla biznesu, dla domu, serwis instalacji fotowoltaicznych"
+        />
+      </Head>
+
       <PageHeader>Oferta</PageHeader>
       <section className=" pb-32">
         <div>
@@ -70,18 +77,6 @@ export default async function Oferta() {
             >
               {serviceOffer.fields.content}
             </OfferSectionDarkCard>
-
-            {/* <Fade direction="bottom" delay={600} triggerOnce>
-              <OfferSectionDarkCard
-                title="Naprawa i serwis 'obcych' instalacji PV"
-                link="/oferta/uslugi-serwisowe"
-                img="/monter_sm.jpg"
-              >
-                Jeżeli Twoja instalacja PV uległa awarii, a wykonawca instalacji
-                nie jest zainteresowany jej naprawą lub nie działa już na rynku,
-                możesz zwróć się do nas.
-              </OfferSectionDarkCard>
-            </Fade> */}
           </div>
         </div>
       </section>

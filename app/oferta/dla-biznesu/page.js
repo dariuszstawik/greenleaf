@@ -41,6 +41,14 @@ export default async function OfertaDlaBiznesu() {
 
   return (
     <>
+      <Head>
+        <title>Dla biznesu: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: Dostarczamy kompleksowe rozwiązania z zakresu fotowoltaiki dla biznesu w połączeniu z magazynowaniem energii. Zapewniamy szybką i sprawną obsługę serwisową."
+        />
+      </Head>
+
       <PageHeader>Dla biznesu</PageHeader>
 
       {firstParagraphContent.map((item, i) => {

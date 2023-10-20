@@ -41,6 +41,14 @@ export default async function OfertaDlaDomu() {
 
   return (
     <>
+      <Head>
+        <title>Dla domu: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: Dostarczamy kompleksowe rozwiązania z zakresu fotowoltaiki dla domu, magazynowania energii, ładowania samochodów elektrycznych jak równie z zakresu inteligentnych systemów zarządzania energią."
+        />
+      </Head>
+
       <PageHeader>Dla domu</PageHeader>
 
       {firstParagraphContent.map((item, i) => {

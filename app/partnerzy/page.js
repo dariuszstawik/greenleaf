@@ -1,5 +1,4 @@
 import { client } from "@/lib/contentful/client";
-import ListItem from "../components/global-components/list-item";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import Partneritem from "../components/partnerzy-page/partner-item";
@@ -19,6 +18,10 @@ export default async function Partnerzy() {
 
   return (
     <>
+      <Head>
+        <title>Partnerzy: Green Leaf Power</title>
+        <meta name="description" content="Green Leaf Power: Partnerzy" />
+      </Head>
       <PageHeader>Partnerzy</PageHeader>
       <section className=" mx-auto px-8 mb-16 pt-10">
         <SectionTitle>Współpraca</SectionTitle>

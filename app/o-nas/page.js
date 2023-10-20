@@ -8,6 +8,7 @@ import ParagraphWithImageOnRight from "../components/global-components/paragraph
 import ParagraphWithImageOnLeft from "../components/global-components/paragraph-with-image-on-left";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Head from "next/head";
 
 async function getContentfulParagraphWithImageOnRight() {
   const resParagraphWithImageOnRight = await client.getEntries({
@@ -50,6 +51,13 @@ export default async function oNas() {
 
   return (
     <>
+      <Head>
+        <title>O nas: Green Leaf Power</title>
+        <meta
+          name="description"
+          content="Green Leaf Power: Zajmujemy się montażem oraz serwisowaniem instalacji fotowoltaicznych - zarówno dla klientów indywidualnych, jak też biznesowych."
+        />
+      </Head>
       <PageHeader>O nas</PageHeader>
 
       {ParagraphWithImageOnRightContent.map((item, i) => {
