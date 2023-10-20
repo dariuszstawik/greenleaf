@@ -9,7 +9,6 @@ export default function OfferSectionDarkCard({
   img,
   children,
 }) {
-  console.log(img);
   return (
     <div className="mt-20 flex flex-wrap rounded-lg overflow-hidden">
       <div className="w-full lg:w-1/2 rounded-lg flex object-cover">

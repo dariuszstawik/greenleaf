@@ -20,12 +20,14 @@ export default async function Logos() {
       <SectionTitle>Współpraca</SectionTitle>
       <div className="flex flex-wrap justify-center -mx-4 my-16">
         {logos.map((item, i) => {
-          return <PartnerLogo key={i} logo={item.fields.logo[0]} />;
+          return (
+            <PartnerLogo
+              key={i}
+              logo={item.fields.logo[0]}
+              logoLink={item.fields.logoLink}
+            />
+          );
         })}
-        {/* // <PartnerLogo logo="MP-Solar_logo.png" />
-        // <PartnerLogo logo="NRG_logo.png" />
-        // <PartnerLogo logo="Growatt-logo.png" />
-        // <PartnerLogo logo="Hopergy_logo.png" /> */}
       </div>
     </section>
   );

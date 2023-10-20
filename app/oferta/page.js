@@ -31,8 +31,6 @@ export default async function Oferta() {
   const homeOffer = await getContentfulHomeOffer();
   const serviceOffer = await getContentfulServiceOffer();
 
-  console.log(businessOffer.fields.title);
-
   return (
     <>
       <Head>

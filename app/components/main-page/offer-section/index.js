@@ -37,14 +37,6 @@ export default function OfferSection({ content }) {
                     {item.fields.content}
                   </OfferSectionDarkCard>
                 )}
-                {/* <OfferSectionDarkCard
-                  title={item.fields.title}
-                  buttonTitle={item.fields.buttonTitle}
-                  link="/oferta"
-                  img={item.fields.obraz ? item.fields.obraz : ""}
-                >
-                  {item.fields.content}
-                </OfferSectionDarkCard> */}
               </Fade>
             );
           })}

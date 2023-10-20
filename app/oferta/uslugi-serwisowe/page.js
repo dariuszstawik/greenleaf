@@ -51,7 +51,11 @@ export default async function Services() {
           listItem5={servicesContent.fields.list5}
           img={servicesContent.fields.image}
           isImgSmaller
+<<<<<<< HEAD
         />
+=======
+        />{" "}
+>>>>>>> c4d2997371ae28b6747bf1b53ea416867ae0565e
       </section>
 
       <ParagraphWithImageOnLeft

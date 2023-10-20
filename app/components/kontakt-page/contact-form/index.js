@@ -35,8 +35,6 @@ const ContactForm = () => {
       }),
     });
 
-    console.log("To jest response.body" + response.body);
-
     if (response.status === 200) {
       setShowNotification(true);
     } else {

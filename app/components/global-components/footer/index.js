@@ -1,4 +1,3 @@
-import { client } from "@/lib/contentful/client";
 import ListItem from "../list-item";
 import Logo from "../logo";
 import Link from "next/link";

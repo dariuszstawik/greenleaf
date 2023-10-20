@@ -6,7 +6,6 @@ import Link from "next/link";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export default function AboutSectionHome(content) {
-  console.log(content.content[0].fields.title);
   return (
     <section className="relative flex flex-col justify-center items-center">
       <SectionTitle>{content.content[0].fields.title}</SectionTitle>
@@ -32,11 +31,6 @@ export default function AboutSectionHome(content) {
                   ></path>
                 </svg>
                 <span className="mb-6 leading-relaxed text-center boldIsGreen">
-                  {/* Nie jesteśmy największą firmą w branży, nie mamy długiej
-                  historii, ale{" "}
-                  <span className="text-primaryGreen">
-                    bardziej się staramy.
-                  </span> */}
                   {documentToReactComponents(content.content[0].fields.content)}
                 </span>
               </div>
