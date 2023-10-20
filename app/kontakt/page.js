@@ -2,6 +2,7 @@ import { client } from "@/lib/contentful/client";
 import PageHeader from "../components/global-components/page-header";
 import ContactForm from "../components/kontakt-page/contact-form";
 import ContactSection from "../components/kontakt-page/contact-section";
+import Head from "next/head";
 
 async function getContentfulContactPage() {
   const resContactPage = await client.getEntries({

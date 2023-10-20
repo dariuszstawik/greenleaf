@@ -2,6 +2,7 @@ import { client } from "@/lib/contentful/client";
 import PageHeader from "../components/global-components/page-header";
 import SectionTitle from "../components/global-components/section-title";
 import Partneritem from "../components/partnerzy-page/partner-item";
+import Head from "next/head";
 
 async function getContentfulPartners() {
   const resPartners = await client.getEntries({

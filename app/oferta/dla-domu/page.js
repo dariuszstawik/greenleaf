@@ -3,6 +3,7 @@ import ParagraphWithImageOnLeft from "@/app/components/global-components/paragra
 import ParagraphWithListAndSubitems from "@/app/components/global-components/paragraph-with-list-and-subitems";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Head from "next/head";
 
 async function getContentfulFirstParagraph() {
   const resFirstParagraph = await client.getEntries({

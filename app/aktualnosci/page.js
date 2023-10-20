@@ -1,6 +1,7 @@
 import { client } from "@/lib/contentful/client";
 import NewsCard from "../components/global-components/news-card";
 import PageHeader from "../components/global-components/page-header";
+import Head from "next/head";
 
 async function getContentfulNewsPosts() {
   const resNewsPosts = await client.getEntries(

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import PageHeader from "../components/global-components/page-header";
 import ParagraphWithlist from "../components/global-components/paragraph-with-list";
 import { client } from "@/lib/contentful/client";

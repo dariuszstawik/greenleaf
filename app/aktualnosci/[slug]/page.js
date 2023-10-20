@@ -2,6 +2,7 @@ import PageHeader from "@/app/components/global-components/page-header";
 import SingleArticle from "@/app/components/global-components/single-article";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Head from "next/head";
 
 export async function generateStaticParams() {
   const res = await client.getEntries({ content_type: "aktualnosci" });
