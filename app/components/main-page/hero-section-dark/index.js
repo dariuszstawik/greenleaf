@@ -34,17 +34,21 @@ export default async function HeroSectionDark() {
         />
         <div>
           <h1 className="px-16 text-white">
-            Green Leaf <span className="block mt-4"> Power </span>
+            {slider[0].fields.tytul1Linijka}
+            <span className="block mt-4">
+              {" "}
+              {slider[0].fields.tytul2Linijka}{" "}
+            </span>
           </h1>
         </div>
         <div className="w-28 h-1 ml-16 rounded-sm bg-primaryGreen" />
         <p className="mx-16 text-lg text-white text-left ">
-          Instalacje fotowoltaiczne, magazyny energii, systemy smart home, a
-          także serwisy fotowoltaiki dla klientów biznesowych oraz
-          indywidualnych.
+          {slider[0].fields.tresc}
         </p>
         <Button className="ml-16 mr-auto mt-2">
-          <Link href="/oferta">Sprawdź naszą ofertę</Link>
+          <Link href={slider[0].fields.buttonLink}>
+            {slider[0].fields.buttonTytul}
+          </Link>
         </Button>
       </div>
 
