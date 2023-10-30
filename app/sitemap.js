@@ -48,4 +48,4 @@ function getFilesRecursive(filePath) {
   return files;
 }
 
-const staticPages = getFoldersRecursive("/app");
+const staticPages = getFoldersRecursive("app/");
