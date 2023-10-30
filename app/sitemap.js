@@ -1,51 +1,66 @@
-const fs = require("fs");
-const path = require("path");
+import { MetadataRoute } from "next";
 
-function getFoldersRecursive(filePath) {
-  const folders = [];
-
-  function shouldIgnoreFolder(folderName) {
-    const ignoredPrefixes = ["[", "(", "_", "-"];
-    return ignoredPrefixes.some((prefix) => folderName.startsWith(prefix));
-  }
-
-  function traverse(currentPath) {
-    const files = fs.readdirSync(currentPath, { withFileTypes: true });
-
-    files.forEach((file) => {
-      if (file.isDirectory()) {
-        const folderName = file.name;
-        if (!shouldIgnoreFolder(folderName)) {
-          folders.push(folderName);
-          traverse(path.join(currentPath, folderName));
-        }
-      }
-    });
-  }
-
-  traverse(filePath);
-  return folders;
+export default function sitemap() {
+  return [
+    {
+      url: "https://www.greenleaf.pl",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 1,
+    },
+    {
+      url: "https://www.greenleaf.pl/o-nas",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://www.greenleaf.pl/oferta",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/oferta/dla-biznesu",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/oferta/dla-domu",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/oferta/uslugi-serwisowe",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/serwis-i-gwarancje",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/partnerzy",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/aktualnosci",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://www.greenleaf.pl/kontakt",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+  ];
 }
-
-function getFilesRecursive(filePath) {
-  const files = [];
-
-  function traverse(currentPath) {
-    const filesInCurrentPath = fs.readdirSync(currentPath, {
-      withFileTypes: true,
-    });
-
-    filesInCurrentPath.forEach((file) => {
-      if (file.isDirectory()) {
-        traverse(path.join(currentPath, file.name));
-      } else {
-        files.push(path.join(currentPath, file.name));
-      }
-    });
-  }
-
-  traverse(filePath);
-  return files;
-}
-
-const staticPages = getFoldersRecursive("app/");
