@@ -34,7 +34,7 @@ export default async function NewsPost({ params }) {
   return (
     <>
       <Head>
-        <title>{newsPost.fields.tytul}: Green Leaf Power</title>
+        <title>{newsPost.fields.tytul || ""}: Green Leaf Power</title>
         <meta name="description" content={newsPost.fields.lead} />
       </Head>
       <div>
